@@ -51,6 +51,18 @@ dev = [
 ]
 
 [[package]]
+name = "atsphinx-footnotes"
+version = "0.2.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "sphinx" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/d9/18/28f98a352a437f4861d41900a1c6a0e4795379b34b11e511d5f43095c6f8/atsphinx_footnotes-0.2.0.tar.gz", hash = "sha256:a6a4ff6f882a7cd4f6ac5da69e47d103b14872868eb3a2535175929d4d56f19e", size = 9012 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/11/e5/2f5d8db33828c029be5fdf3ca7f2b88085e8d1fca579e15b3f224e54982a/atsphinx_footnotes-0.2.0-py2.py3-none-any.whl", hash = "sha256:31b5298b27adab4d77035f1fbdb3327b39c9907f8719f28cfc10b10a66bbf51d", size = 5571 },
+]
+
+[[package]]
 name = "attrs"
 version = "24.3.0"
 source = { registry = "https://pypi.org/simple" }
@@ -321,6 +333,7 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "atsphinx-bulma" },
+    { name = "atsphinx-footnotes" },
     { name = "sphinx" },
 ]
 
@@ -336,6 +349,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "atsphinx-bulma", editable = "vendor/bulma" },
+    { name = "atsphinx-footnotes", specifier = ">=0.2.0" },
     { name = "sphinx", specifier = ">=8.1.3" },
 ]
 

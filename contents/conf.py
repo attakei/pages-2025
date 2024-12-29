@@ -6,6 +6,8 @@ release = "2025"
 
 # -- General configuration
 extensions = [
+    # My extensions
+    "atsphinx.footnotes",
     # Private
     "pages",
 ]
