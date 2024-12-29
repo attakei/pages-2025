@@ -27,14 +27,27 @@ wheels = [
 [[package]]
 name = "atsphinx-bulma"
 version = "0.1.0"
-source = { registry = "https://pypi.org/simple" }
+source = { editable = "vendor/bulma" }
 dependencies = [
     { name = "sphinx" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b7/3a/55f3cababb57d0f3a8d206231c184df129a237bec4cfcd5b491cc4154820/atsphinx_bulma-0.1.0.tar.gz", hash = "sha256:5be3c81d51ef5f0b9437fc70a28480aa96b105a2080b228d7f10d3cd0615900d", size = 55385 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/b3/0c/ec27b19bc794deb9c952741f388439138d98588a6e1a92f8342e6992d4d9/atsphinx_bulma-0.1.0-py3-none-any.whl", hash = "sha256:c97ffd492dd5db4acfb9531ec8c4e0436fb65a634ca0943e4e575d298af4a2f4", size = 13759 },
+
+[package.metadata]
+requires-dist = [
+    { name = "sphinx", specifier = ">=7.3.0" },
+    { name = "typing-extensions", specifier = ">=4.12.2" },
+]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "atsphinx-mini18n" },
+    { name = "esbonio" },
+    { name = "mypy", specifier = ">=1.13.0" },
+    { name = "pytest" },
+    { name = "sphinx-autobuild" },
+    { name = "sphinx-intl" },
+    { name = "types-docutils", specifier = ">=0.21.0.20241128" },
 ]
 
 [[package]]
@@ -322,7 +335,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "atsphinx-bulma", specifier = ">=0.1.0" },
+    { name = "atsphinx-bulma", editable = "vendor/bulma" },
     { name = "sphinx", specifier = ">=8.1.3" },
 ]
 
