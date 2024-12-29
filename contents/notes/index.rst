@@ -7,5 +7,6 @@ Notes
 
 .. toctree::
    :maxdepth: 2
+   :glob:
 
-   gadget/index
+   */index
