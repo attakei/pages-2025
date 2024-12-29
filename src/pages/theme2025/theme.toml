@@ -2,10 +2,11 @@
 inherit = "bulma-basic"
 stylesheets = ["style.css"]
 sidebars = [
+    "sidebar/logo.html",
+    "sidebar/line.html",
     "sidebar/searchbox.html",
     "sidebar/localtoc.html",
     "sidebar/relations.html",
-    "sidebar/sourcelink.html",
 ]
 
 [options]
