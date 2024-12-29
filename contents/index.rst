@@ -7,3 +7,4 @@ Home
 
    about
    works/index
+   notes/index

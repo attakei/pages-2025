@@ -6,6 +6,8 @@ release = "2025"
 
 # -- General configuration
 extensions = [
+    # Built-in extensions
+    "sphinx.ext.todo",
     # My extensions
     "atsphinx.footnotes",
     # Private
@@ -27,3 +29,7 @@ html_theme_options = {
     "logo_description": "attakeiのあれこれ置き場。ノート/ブログ/登壇記録など。",
     "navbar_search": True,
 }
+
+# -- Options for extensions
+# sphinx.ext.todo
+todo_include_todos = True
