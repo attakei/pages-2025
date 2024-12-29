@@ -25,4 +25,5 @@ html_theme = "pages-2025"
 html_theme_options = {
     "bulmaswatch": "flatly",
     "logo_description": "attakeiのあれこれ置き場。ノート/ブログ/登壇記録など。",
+    "navbar_search": True,
 }
