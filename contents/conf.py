@@ -10,6 +10,8 @@ extensions = [
     "sphinx.ext.todo",
     # My extensions
     "atsphinx.footnotes",
+    # Third-party extensions
+    "sphinxnotes.strike",
     # Private
     "pages",
 ]
@@ -33,3 +35,7 @@ html_theme_options = {
 # -- Options for extensions
 # sphinx.ext.todo
 todo_include_todos = True
+# pages
+pages_template_rule = {
+    "404": "error.html",
+}
