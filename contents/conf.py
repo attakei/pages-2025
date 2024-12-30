@@ -1,3 +1,5 @@
+import os
+
 # -- Project information
 project = "attakei pages"
 copyright = "2024, attakei"
@@ -7,10 +9,12 @@ release = "2025"
 # -- General configuration
 extensions = [
     # Built-in extensions
+    "sphinx.ext.intersphinx",
     "sphinx.ext.todo",
     # My extensions
     "atsphinx.footnotes",
     # Third-party extensions
+    "pages.ext.ablog",
     "sphinx_last_updated_by_git",
     "sphinxnotes.strike",
     # Private
@@ -42,6 +46,11 @@ html_theme_options = {
 # -- Options for extensions
 # sphinx.ext.todo
 todo_include_todos = True
+# ablog
+blog_path = "blog"
+blog_baseurl = os.environ.get("SITE_BASEURL", "/")
+post_date_format = "%Y-%m-%d"
+fontawesome_included = True
 # pages
 pages_template_rule = {
     "404": "error.html",

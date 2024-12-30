@@ -1,0 +1,25 @@
+<aside class="level">
+  <span class="tags is-justify-content-start mb-1">
+    <span class="tag icon-text is-primary">
+      <span class="icon">
+        <i class="fas fa-solid fa-tags"></i>
+      </span>
+      <span>{{ post.category[0] }}</span>
+    </span>
+    <span class="tag icon-text is-info is-rounded">
+      <span class="icon">
+        <i class="fas fa-solid fa-calendar"></i>
+      </span>
+      <span>{{ post.date }}</span>
+    </span>
+    {% for tag in post.tags %}
+      <span class="tag icon-text">
+        <span class="icon">
+          <i class="fas fa-solid fa-tags"></i>
+        </span>
+        <span>{{ tag }}</span>
+      </span>
+    {% endfor %}
+  </span>
+  <hr class="mt-0">
+</aside>
