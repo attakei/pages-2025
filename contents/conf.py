@@ -28,6 +28,7 @@ html_logo = "_static/images/icon-attakei@2x.png"
 html_theme = "pages-2025"
 html_theme_options = {
     "bulmaswatch": "flatly",
+    "color_mode": "light",
     "logo_description": "attakeiのあれこれ置き場。ノート/ブログ/登壇記録など。",
     "navbar_search": True,
 }
