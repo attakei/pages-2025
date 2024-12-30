@@ -25,6 +25,9 @@ html_title = "attakei pages"
 html_short_title = html_title
 html_favicon = "_static/images/favicon.ico"
 html_logo = "_static/images/icon-attakei@2x.png"
+html_js_files = [
+    "https://kit.fontawesome.com/9da28e60fd.js",
+]
 html_theme = "pages-2025"
 html_theme_options = {
     "bulmaswatch": "flatly",
