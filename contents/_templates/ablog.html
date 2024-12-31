@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% macro postlink(post) -%}
+{% if post.external_link -%}
+  {{- post.external_link -}}
+{% else %}
+  {{- pathto(post.docname) }}{{ anchor(post) -}}
+{%- endif %}
+{%- endmacro %}

@@ -1,0 +1,45 @@
+{%- extends "ablog.html" %}
+
+{% block body %}
+<h1 class="title">
+  <span
+    >Blog: {{ header }} {% if collection.href %}
+    <a href="{{ collection.href }}">{{ collection }}</a>
+    {% else %} {{ collection }} {% endif %}
+  </span>
+</h1>
+<div class="container">
+  {% for post in collection %}
+  <article class="media">
+    <figure class="media-left">
+      <span class="icon">
+        {% set icon = 'pen-nib' %}
+        {% if post.external_link %}
+          {% set icon = 'external-link' %}
+        {% endif %}
+        <i class="fas fa-{{ icon }} fa-2x"></i>
+      </span>
+      <br>
+      <br>
+    </figure>
+    <div class="media-content">
+      <div class="content">
+        <p class="subtitle">
+          <a href="{{ postlink(post) }}">{{ post.title }}</a>
+        </p>
+        <div class="ml-2">
+          {{ post.to_html(collection.docname) }}
+          <small>
+            {{ post.date.strftime(ablog.post_date_format) }}
+            //
+            {{ post.category[0] }}
+            //
+            {{ post.tags|join(',') }}
+          </small>
+        </div>
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+</div>
+{% endblock %}
