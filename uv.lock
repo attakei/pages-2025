@@ -335,6 +335,7 @@ dependencies = [
     { name = "atsphinx-bulma" },
     { name = "atsphinx-footnotes" },
     { name = "sphinx" },
+    { name = "sphinx-last-updated-by-git" },
     { name = "sphinxnotes-strike" },
 ]
 
@@ -353,6 +354,7 @@ requires-dist = [
     { name = "atsphinx-bulma", editable = "vendor/bulma" },
     { name = "atsphinx-footnotes", specifier = ">=0.2.0" },
     { name = "sphinx", specifier = ">=8.1.3" },
+    { name = "sphinx-last-updated-by-git", specifier = ">=0.3.8" },
     { name = "sphinxnotes-strike", specifier = ">=1.2.1" },
 ]
 
@@ -524,6 +526,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/a5/2c/155e1de2c1ba96a72e5dba152c509a8b41e047ee5c2def9e9f0d812f8be7/sphinx_autobuild-2024.10.3.tar.gz", hash = "sha256:248150f8f333e825107b6d4b86113ab28fa51750e5f9ae63b59dc339be951fb1", size = 14023 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/18/c0/eba125db38c84d3c74717008fd3cb5000b68cd7e2cbafd1349c6a38c3d3b/sphinx_autobuild-2024.10.3-py3-none-any.whl", hash = "sha256:158e16c36f9d633e613c9aaf81c19b0fc458ca78b112533b20dafcda430d60fa", size = 11908 },
+]
+
+[[package]]
+name = "sphinx-last-updated-by-git"
+version = "0.3.8"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "sphinx" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/03/fd/de1685b6dab173dff31da24e0d3b29f02873fc24a1cdbb7678721ddc8581/sphinx_last_updated_by_git-0.3.8.tar.gz", hash = "sha256:c145011f4609d841805b69a9300099fc02fed8f5bb9e5bcef77d97aea97b7761", size = 10785 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e1/fb/e496f16fa11fbe2dbdd0b5e306ede153dfed050aae4766fc89d500720dc7/sphinx_last_updated_by_git-0.3.8-py3-none-any.whl", hash = "sha256:6382c8285ac1f222483a58569b78c0371af5e55f7fbf9c01e5e8a72d6fdfa499", size = 8580 },
 ]
 
 [[package]]

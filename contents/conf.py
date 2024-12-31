@@ -11,6 +11,7 @@ extensions = [
     # My extensions
     "atsphinx.footnotes",
     # Third-party extensions
+    "sphinx_last_updated_by_git",
     "sphinxnotes.strike",
     # Private
     "pages",
