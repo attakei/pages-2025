@@ -5,14 +5,13 @@
   <div class="level">
     <div class="level-left">
       <p>
+        {{- copyright_block() -}}
+        &nbsp;|&nbsp;
         <a href="/terms/">Terms</a>
       </p>
     </div>
     <div class="level-right">
       <p>
-        {%- if show_copyright %}
-          {{- copyright_block() -}}
-        {%- endif %}
         {%- if last_updated %}
           {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
         {%- endif %}
