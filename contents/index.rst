@@ -8,3 +8,8 @@ Home
    about
    works/index
    notes/index
+
+.. toctree::
+   :hidden:
+
+   terms
