@@ -31,6 +31,9 @@ html_title = "attakei pages"
 html_short_title = html_title
 html_favicon = "_static/images/favicon.ico"
 html_logo = "_static/images/icon-attakei@2x.png"
+html_css_files = [
+    "css/custom.css",
+]
 html_js_files = [
     "https://kit.fontawesome.com/9da28e60fd.js",
 ]

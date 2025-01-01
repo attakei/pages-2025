@@ -1,0 +1,8 @@
+@media screen and (max-width: 1023px) {
+	.navbar .navbar-brand {
+		.navbar-item:not(.is-active):not(:hover),
+		.navbar-link:not(.is-active):not(:hover) {
+			color: var(--bulma-scheme-main);
+		}
+	}
+}
