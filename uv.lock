@@ -415,6 +415,7 @@ dependencies = [
     { name = "atsphinx-footnotes" },
     { name = "sphinx" },
     { name = "sphinx-last-updated-by-git" },
+    { name = "sphinx-sitemap" },
     { name = "sphinxnotes-strike" },
 ]
 
@@ -436,6 +437,7 @@ requires-dist = [
     { name = "atsphinx-footnotes", specifier = ">=0.2.0" },
     { name = "sphinx", specifier = ">=8.1.3" },
     { name = "sphinx-last-updated-by-git", specifier = ">=0.3.8" },
+    { name = "sphinx-sitemap", specifier = ">=2.6.0" },
     { name = "sphinxnotes-strike", specifier = ">=1.2.1" },
 ]
 
@@ -641,6 +643,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/03/fd/de1685b6dab173dff31da24e0d3b29f02873fc24a1cdbb7678721ddc8581/sphinx_last_updated_by_git-0.3.8.tar.gz", hash = "sha256:c145011f4609d841805b69a9300099fc02fed8f5bb9e5bcef77d97aea97b7761", size = 10785 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e1/fb/e496f16fa11fbe2dbdd0b5e306ede153dfed050aae4766fc89d500720dc7/sphinx_last_updated_by_git-0.3.8-py3-none-any.whl", hash = "sha256:6382c8285ac1f222483a58569b78c0371af5e55f7fbf9c01e5e8a72d6fdfa499", size = 8580 },
+]
+
+[[package]]
+name = "sphinx-sitemap"
+version = "2.6.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "sphinx" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/42/ed/96cc112b671e06df01c8306c25ce3331ccfece0d30235e32eb039afc8094/sphinx_sitemap-2.6.0.tar.gz", hash = "sha256:5e0c66b9f2e371ede80c659866a9eaad337d46ab02802f9c7e5f7bc5893c28d2", size = 6042 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/94/d4/dffb4da380be24fd390d284634735d6fba560980014050e52569c04d215b/sphinx_sitemap-2.6.0-py3-none-any.whl", hash = "sha256:7478e417d141f99c9af27ccd635f44c03a471a08b20e778a0f9daef7ace1d30b", size = 5632 },
 ]
 
 [[package]]

@@ -16,6 +16,7 @@ extensions = [
     # Third-party extensions
     "pages.ext.ablog",
     "sphinx_last_updated_by_git",
+    "sphinx_sitemap",
     "sphinxnotes.strike",
     # Private
     "pages",
@@ -27,6 +28,7 @@ language = "ja"
 # -- Options for HTML output
 html_baseurl = os.environ.get("SITE_BASE_URL", "/")
 html_static_path = ["_static"]
+html_extra_path = ["_extra/robots.txt"]
 html_title = "attakei pages"
 html_short_title = html_title
 html_favicon = "_static/images/favicon.ico"
@@ -58,6 +60,15 @@ blog_title = "Blog of attakei pages"
 blog_baseurl = html_baseurl
 post_date_format = "%Y-%m-%d"
 fontawesome_included = True
+# sphinx-sitemap
+sitemap_url_scheme = "{link}"
+sitemap_locales = [None]
+sitemap_excludes = [
+    "404/",
+    "blog/drafts/",
+    "search/",
+    "genindex/",
+]
 # pages
 pages_template_rule = {
     "404": "error.html",
