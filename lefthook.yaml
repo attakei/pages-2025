@@ -16,3 +16,6 @@ pre-commit:
     doc8:
       glob: '*.rst'
       run: 'uvx doc8 --max-line-length=119 {staged_files}'
+    textlint:
+      glob: '*.rst'
+      run: 'uv run pnpm textlint {staged_files}'
