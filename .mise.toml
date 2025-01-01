@@ -2,3 +2,4 @@
 lefthook = "latest"
 uv = "latest"
 task = "latest"
+pnpm = "latest"

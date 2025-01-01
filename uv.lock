@@ -187,6 +187,18 @@ wheels = [
 ]
 
 [[package]]
+name = "docutils-ast-writer"
+version = "2023.1.0"
+source = { url = "https://github.com/attakei-sandbox/docutils-ast-writer/archive/refs/heads/dev.zip" }
+dependencies = [
+    { name = "docutils" },
+]
+sdist = { url = "https://github.com/attakei-sandbox/docutils-ast-writer/archive/refs/heads/dev.zip", hash = "sha256:a64061511818af218d9db47f60bfbace0dc7cdac2fc112335a8743eedbe2204f" }
+
+[package.metadata]
+requires-dist = [{ name = "docutils", specifier = ">=0.20,<0.22" }]
+
+[[package]]
 name = "esbonio"
 version = "0.16.5"
 source = { registry = "https://pypi.org/simple" }
@@ -409,6 +421,7 @@ dependencies = [
 [package.dev-dependencies]
 dev = [
     { name = "doc8" },
+    { name = "docutils-ast-writer" },
     { name = "esbonio" },
     { name = "mypy" },
     { name = "ruff" },
@@ -429,6 +442,7 @@ requires-dist = [
 [package.metadata.requires-dev]
 dev = [
     { name = "doc8", specifier = ">=1.1.2" },
+    { name = "docutils-ast-writer", url = "https://github.com/attakei-sandbox/docutils-ast-writer/archive/refs/heads/dev.zip" },
     { name = "esbonio", specifier = ">=0.16.5" },
     { name = "mypy", specifier = ">=1.14.0" },
     { name = "ruff", specifier = ">=0.8.4" },
