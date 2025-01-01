@@ -7,8 +7,7 @@ Updates
 
 .. postlist:: 5
    :date: %Y/%m/%d
-   :format: {date} - {title}
-   :excerpts:
+   :format: {date} : {title}
 
 Contens
 =======

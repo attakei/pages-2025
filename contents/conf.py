@@ -25,6 +25,7 @@ exclude_patterns = []
 language = "ja"
 
 # -- Options for HTML output
+html_baseurl = os.environ.get("SITE_BASE_URL", "/")
 html_static_path = ["_static"]
 html_title = "attakei pages"
 html_short_title = html_title
@@ -48,7 +49,8 @@ html_theme_options = {
 todo_include_todos = True
 # ablog
 blog_path = "blog"
-blog_baseurl = os.environ.get("SITE_BASEURL", "/")
+blog_title = "Blog of attakei pages"
+blog_baseurl = html_baseurl
 post_date_format = "%Y-%m-%d"
 fontawesome_included = True
 # pages
