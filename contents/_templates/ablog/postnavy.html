@@ -1,0 +1,27 @@
+{% set post = ablog[pagename] %}
+{% if post.published and ablog.post_show_prev_next %}
+<div class="columns">
+  <div class="column has-text-left">
+    {% if post.next %}
+    <a href="{{ pathto(post.next.docname) }}{{ anchor(post.next) }}">
+      <i class="fas fa-arrow-circle-left"></i>
+      <br>
+      <span>{{ post.next.title }}</span>
+    </a>
+    {% else %}
+    Begin of blog
+    {% endif %}
+  </div>
+  <div class="column has-text-right">
+    {% if post.prev %}
+    <a href="{{ pathto(post.prev.docname) }}{{ anchor(post.prev) }}">
+      <i class="fas fa-arrow-circle-right"></i>
+      <br>
+      <span>{{ post.prev.title }}</span>
+    </a>
+    {% else %}
+    End of blog
+    {% endif %}
+  </div>
+</div>
+{% endif %}
