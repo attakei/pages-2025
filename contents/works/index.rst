@@ -36,6 +36,7 @@ sphinx-revealjs
 詳細は下記のページを参照。
 
 .. toctree::
+   :maxdepth: 1
 
    speak/index
 

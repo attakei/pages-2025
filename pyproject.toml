@@ -8,6 +8,7 @@ dependencies = [
     "ablog>=0.11.12",
     "atsphinx-bulma>=0.2.0",
     "atsphinx-footnotes>=0.2.0",
+    "oembedpy>=0.7.2",
     "sphinx-last-updated-by-git>=0.3.8",
     "sphinx-sitemap>=2.6.0",
     "sphinx>=8.1.3",

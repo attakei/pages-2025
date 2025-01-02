@@ -15,6 +15,7 @@ extensions = [
     "atsphinx.footnotes",
     # Third-party extensions
     "pages.ext.ablog",
+    "oembedpy.ext.sphinx",
     "sphinx_last_updated_by_git",
     "sphinx_sitemap",
     "sphinxnotes.strike",
