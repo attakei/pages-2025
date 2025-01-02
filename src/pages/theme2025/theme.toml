@@ -5,6 +5,7 @@ sidebars = [
     "sidebar/logo.html",
     "sidebar/line.html",
     "sidebar/globaltoc.html",
+    "sidebar/relations.html",
 ]
 
 [options]

@@ -1,0 +1,50 @@
+<div class="block" id="sidebar-toc">
+  <h3 class="subtitle">Navigation</h3>
+  <aside class="buttons has-addons is-centered">
+    {%- if prev %}
+      <a class="button" title="Prev page" href="{{ prev.link|e}}">
+        <span class="icon is-small">
+          <i class="fas fa-arrow-left"></i>
+        </span>
+      </a>
+    {% else %}
+      <button class="button" title="Prev page" disabled>
+        <span class="icon is-small">
+          <i class="fas fa-arrow-left"></i>
+        </span>
+      </button>
+    {% endif %}
+    {%- if parents %}
+      <a class="button" title="Parent page" href="{{ parents[0].link|e }}">
+        <span class="icon is-small">
+          <i class="fas fa-arrow-up"></i>
+        </span>
+      </a>
+    {% elif pagename == "index" %}
+      <button class="button" title="Parent page" disabled>
+        <span class="icon is-small">
+          <i class="fas fa-arrow-up"></i>
+        </span>
+      </button>
+    {% else %}
+      <a class="button" title="Parent page" href="/">
+        <span class="icon is-small">
+          <i class="fas fa-arrow-up"></i>
+        </span>
+      </a>
+    {% endif %}
+    {%- if next %}
+      <a class="button" title="Next page" href="{{ next.link|e }}">
+        <span class="icon is-small">
+          <i class="fas fa-arrow-right"></i>
+        </span>
+      </a>
+    {% else %}
+      <button class="button" title="Next page" disabled>
+        <span class="icon is-small">
+          <i class="fas fa-arrow-right"></i>
+        </span>
+      </button>
+    {% endif %}
+  </aside>
+</div>
