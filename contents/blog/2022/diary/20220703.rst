@@ -1,0 +1,42 @@
+=============================
+PyScriptやTauriで遊んでいた週
+=============================
+
+.. post:: 2022-07-03
+   :category: Diary
+   :tags: Python,Sphinx,PyScript,
+   :redirect: blog/2022/weekly/20220703
+
+2022/06/27～2022/07/03あたりの振り返りメモ。
+
+Tauriで遊んでみた
+=================
+
+https://github.com/attakei-sandbox/tauri-presentation
+
+会社の話題でTauriが出てきたので、
+お試しがてら「Reveal.jsプレゼンテーションをする」だけのアプリを作ってみました。
+
+中身の採用理由は次のような雑なものです。
+
+* ``create tauri-app`` で出来るものだとあまり面白みがない
+* とはいえ「ビルドのsiやすさ」を体感したいのに、UI実装は面倒
+
+最終的には、GitHubリポジトリにあるようにWindows/macOS/Linuxでのクロスプラットフォームビルドがかなり簡単にできるなぁという感想です。
+
+以前にKivyなどを試していたときはビルド環境を整えるのも大変でしたが、
+GitHub Actionsが席巻したこともあってクロスビルドが本当に楽になったなと思います。
+
+PyScriptで遊んでみた
+====================
+
+`PyCon JP TV <https://tv.pycon.jp/episode/18.html>`_ を見ながらあれこれと。
+
+最終的に `Zennに書いた記事 <https://zenn.dev/attakei/articles/py-env-of-pyscript>`_ の通りの挙動をすることまで追ってました。
+
+ついでに、SphinxドキュメントにPyScriptを埋め込めるようなSphinx拡張をお試しで実装してみました。
+
+https://github.com/attakei-lab/sphinxcontrib-pyscript
+
+`中身説明用のドキュメント <https://attakei-lab.github.io/sphinxcontrib-pyscript/>`_ にJanomeをつかった形態素解析をブラウザ上で実行するためのデモを用意しています。
+実際にこの段階まで試した感覚としては、「制約こそあれどPyodideが許す範囲でのPython処理をブラウザで出来る」と言うのは、以前と比べて面白い体験を得られそうでした。

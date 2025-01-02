@@ -1,0 +1,63 @@
+===============================================================
+PHP界隈にコントリビュートしたり、ドッグフーディングをしていた週
+===============================================================
+
+.. post:: 2022-06-05
+   :category: Diary
+   :tags: PHP,Python,sphinx-revealjs,
+   :redirect: blog/2022/weekly/20220605
+
+2022/05/23～2022/06/05あたりの振り返りメモ。
+
+php.netの改善PRがマージされました
+=================================
+
+.. image:: https://opengraph.githubassets.com/085940b3c4080e2eb3f625b6f2257c8031949da564e9ae8069da286d7a96d7bf/php/web-php/issues/518
+   :target: https://github.com/php/web-php/issues/518
+
+`PHPサイト <https://php.net>`_ のサーチバーでASCII文字以外を含むキーワードを検索した際に、
+``Search for ～`` のリンクをクリックすると検索が機能しなくなっていました。 [#php-pr-trigger]_
+
+原因としては、 ``Search for ～`` な部分を生成するJavaScriptが、
+検索キーワードを生成する際に ``escape()`` [#mdn-escape]_ を用いていたことでした。
+
+最終的に、クエリ作成時に ``encodeURIComponent()`` [#mdn-euric]_ を使うように差し替えるブランチをPRとして提出して、
+数日後にマージされてめでたく反映されました。
+
+PHPサイトは、それなりのユーザーが日々アクセスするサイトです。
+実際にこのアクションに救われる人がどれだけいるかは不明ですが、
+「相当人数が自分の編集したコードにアクセスする」と言うのは想像するだけでも楽しい体験でした。
+
+.. note:: もしかしたら、もうちょっと細かい記事化をするかも？
+
+sphinx-revealjs v2.0betaのドッグフーディング
+============================================
+
+.. oembed:: https://x.com/attakei/status/1529473775166578688?s=20&t=uwmae0gWiqTHRBv76mrZqA
+
+このツイート時点で ``sphinx-revealjs`` のv2.0に予定していた機能実装は終えたので、
+現時点でbetaバージョンとしての公開と簡易的なドッグフーディングや調整フェーズに入っています。
+
+例えば、このサイトに含まれているスライド自体は、v2.0で生成されています。
+
+デモのi18nをついでに試す
+========================
+
+ドッグフーディングのついでに、デモプレゼンテーションの内容を整理ついでにi18n対応して日本語版を用意してみました。
+
+Sphinxドキュメンテーションにおける国際化は、標準的な手法としては ``sphinx-intl`` を生成してのpoファイル編集です。
+デモのソースはあくまでSphinxを前提としているreStructuredTextのため、この手法が問題なく使える想定でいます。
+
+実際にi18n対応を思いついてから1⃣時間程度手を動かしてみましたが、
+特に不可解な事象もなく ``_locales/ja/LC_MESSAGES/`` 配下にpoファイルが生成され、
+日本語版のビルドまで進めました。
+
+デモの方はGitHub Pages側でホスティングしていることもあり、統合ビルドにちょっとした手間を掛ける必要はあるものの、
+Sphinxの延長線上からはみ出ない実装にはなっておりホッとしています。
+
+Footnotes
+=========
+
+.. [#php-pr-trigger] 社内の用件でPHPサイト内での用語検索をしてた際に、たまたまサーチバーをEnterで遷移しなかったために気づけました
+.. [#mdn-escape] https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/escape
+.. [#mdn-euric] https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent

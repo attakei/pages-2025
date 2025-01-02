@@ -62,6 +62,8 @@ blog_title = "Blog of attakei pages"
 blog_baseurl = html_baseurl
 post_date_format = "%Y-%m-%d"
 fontawesome_included = True
+# oembedpy.ext.sphinx
+oembed_fallback_type = True
 # sphinx-sitemap
 sitemap_url_scheme = "{link}"
 sitemap_locales = [None]

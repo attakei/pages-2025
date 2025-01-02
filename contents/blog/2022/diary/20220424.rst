@@ -1,0 +1,50 @@
+===========================================
+sphinx-revealjsをトリガーに色々と動いてた週
+===========================================
+
+.. post:: 2022-04-24
+   :category: Diary
+   :tags: Python,Sphinx,sphinx-revealjs,
+   :redirect: blog/2022/weekly/20220424
+
+sphinx-revealjsのv2.xに向けて、色々と動かしていました。
+
+Sphinx+翻訳 Hack-a-thon 2022.04
+===============================
+
+https://sphinxjp.connpass.com/event/243093/
+
+直近のライフサイクルの関係で昼食が遅れてしまい、1時間ほど遅刻しました。
+
+主な成果は次の2個です。
+
+sphinxcontrib-budoux
+--------------------
+
+先週ぐらいにガーッと作ってたSphinx拡張を、テストコードの追加をした上で、PyPIに登録しました。
+
+* `PyPI <https://pypi.org/project/sphinxcontrib-budoux/>`_
+* `GitHub <https://github.com/attakei-lab/sphinxcontrib-budoux/>`_
+
+あの場で作りきったところまで成果報告で話すと、
+「ここでも使える？」とか「こういうアプローチの方がいいかも」というグッド系フィードバックがもらえるので、
+やっぱり良い場所ですね。
+
+Zenn上にSphinx拡張の記事を書いた
+--------------------------------
+
+`記事URLはこっち <https://zenn.dev/attakei/articles/sphinx-extensions-202204>`_
+
+:doc:`/blog/2022/diary/20220417` で書いたリストを、もうちょっとだけちゃんと説明した感じになりますが、+αでcookiecutter用のテンプレートの紹介などもしています。
+
+.. oembed:: https://x.com/attakei/status/1518181202179784704
+
+コア動機自体は割りとこのツイートに収束するんですが、基本的には「Sphinx拡張」の基盤として何が必要かが自身の土台になっている濫造っぷりでした。
+
+sphinx-revealjs v2.x
+====================
+
+↑に書かれたようなSphinx拡張で機能の分離を進めていけたため、「ライブラリのスリム化」を主目的にして ``2.x`` 系の準備を進め始めています。
+
+``0.x`` ～ ``1.x`` における実装上の都合で生まれたちょっとした負荷を減らしつつ、機能追加もされた状態になる予定です。
+目安としては6月中ぐらいにまでには？

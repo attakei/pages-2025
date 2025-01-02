@@ -1,0 +1,48 @@
+==============================================================
+副反応でグダグダなったりしつつ、Sphinx拡張をポコポコ増やした週
+==============================================================
+
+.. post:: 2022-04-17
+   :category: Diary
+   :tags: Sphinx,Python,COVID-19,Webサイト,
+   :redirect: blog/2022/weekly/20220417
+
+今週のふわっとした振り返りなど。
+
+ワクチンの副反応
+================
+
+.. oembed:: https://x.com/attakei/status/1513048739816284165
+
+ここからなんだけど、結局微熱を終始引きずってた。
+
+サイトの再作成
+==============
+
+Sphinxベースなのは同じなのだが、基盤整理のついでに方向性を少し見直して再作成中。
+（この週報時点では、未完成）
+
+* 基本的には公開されているSphinx拡張を使う。
+* 個人で書いていたSphinx拡張も最低限GitHubに公開した上で使う。
+* テーマは頑張らない。
+* 単一リポジトリに、サイトHTMLとスライドHTMLを同居させる。
+
+Sphinx拡張もろもろ
+==================
+
+主に上記の実現のために、Labリポジトリの方で新規作成したり既存の改修をしたり。
+
+* `sphinxcontrib-mixed-builder <https://github.com/attakei-lab/sphinxcontrib-mixed-builder/>`_ : 単一プロジェクトでファイルによってビルダーを変える。
+* `sphinxcontrib-sass <https://github.com/attakei-lab/sphinxcontrib-sass/>`_ : ビルドの途中でSASSからCSSを生成する。
+* `sphinxcontrib-budoux <https://github.com/attakei-lab/sphinxcontrib-budoux>`_ : タイトル系ディレクティブ限定で、日本語テキストをいい感じに改行可能な状態へ変換する。
+* `sphinxcontrib-oembed <https://github.com/attakei-lab/sphinxcontrib-oembed>`_ : oEmbedコンテンツの対象URLをパラメーターに埋め込み用HTMLを各サイトから取ってくる。
+
+Start Python Club #80
+=====================
+
+https://startpython.connpass.com/event/242556/
+
+久々に参加。
+
+個人的には ``zoneinfo`` の話をきちんと聞く機会になったのが大きかった。
+この辺の標準ライブラリレイヤーは、起案部分を含めて歴史を聞くのがやっぱり楽しい。
