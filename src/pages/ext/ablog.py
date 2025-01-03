@@ -56,7 +56,8 @@ class PagesPostDirective(PostDirective):
 
 
 def bind_slugify(app: Sphinx, builder: Builder):
-    builder.templates.environment.filters["slugify"] = slugify
+    if builder.format == "html":
+        builder.templates.environment.filters["slugify"] = slugify
 
 
 def setup(app: Sphinx):
