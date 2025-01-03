@@ -44,6 +44,9 @@ def depart_frontmatter(self, node: frontmatter):
 class PagesPostDirective(PostDirective):
     def run(self):
         nodes = super().run()
+        tags = nodes[0].get("tags", None)
+        if tags and tags[-1] == "":
+            nodes[0]["tags"] = tags[:-1]
         nodes[0]["nocomments"] = True
         node = frontmatter()
         node.attributes = deepcopy(nodes[0].attributes)
