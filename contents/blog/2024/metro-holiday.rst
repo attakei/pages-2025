@@ -4,7 +4,7 @@
 .. post:: 2024-02-26
    :external_link: https://sizu.me/attakei/posts/nak5cwmdvm9w
    :category: Life
-   :tags: 東京メトロ
+   :tags: 東京メトロ,
 
 最低限「外出頻度を上げたい」ぐらいのモチベーションは無いと、使うのは少々難しい。
 

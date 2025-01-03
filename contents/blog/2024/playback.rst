@@ -4,7 +4,7 @@
 
 .. post:: 2024-12-30
    :category: Life
-   :tags: Python
+   :tags: Python,振り返り,Sphinx,登壇,
 
 サイト整理のついでにブログを書くサイクルをどうにかできそうなので、
 忘れない範囲で今年の振り返り。

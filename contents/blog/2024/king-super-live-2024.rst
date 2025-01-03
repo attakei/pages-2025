@@ -4,7 +4,7 @@ KING SUPER LIVE 2024 Day 1の同窓会っぷりを整理するために、年情
 .. post:: 2024-05-12
    :external_link: https://sizu.me/attakei/posts/rkk91aiawx1v
    :category: Life
-   :tags: アニソン,ライブ
+   :tags: アニソン,ライブ,
 
 まさにアニソン同窓会！
 
