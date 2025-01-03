@@ -31,4 +31,4 @@ deck2pdf-pythonがそこそこ。omniauth-backlogが地味にダウンロード�
 * Akamai Customer Day
 * CodeIQ忘年会
 
-こんなに行ってたのか。 `ライブ振り返り </blog/2015/review-live-2015>`_ も考えると、結構な外出してたんだなぁ。
+こんなに行ってたのか。 :doc:`ライブ振り返り </blog/2015/review-live-2015>` も考えると、結構な外出してたんだなぁ。

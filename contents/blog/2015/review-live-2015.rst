@@ -8,7 +8,9 @@
 まとめ
 ------
 
-`こちらを参照 <{filename}/pages/eventlog/2015_live.rst>`_
+:strike:`こちらを参照`
+
+.. /pages/eventlog/2015-live
 
 感想
 ----
