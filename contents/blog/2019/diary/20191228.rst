@@ -36,7 +36,7 @@ Qiita Advent Calendar 振り返り
 
 * Ansible 1記事
 
-  * `Ansibleのcopyモジュールはどうやって冪等性を担保しているのか <../read-ansible-copy-modules/index.html>`_
+  * :doc:`/blog/2019/read-ansible-copy-module/index`
 
 * Pythonその2 1記事
 
