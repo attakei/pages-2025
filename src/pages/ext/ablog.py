@@ -7,6 +7,8 @@ from ablog import blog  # type: ignore
 from ablog.post import PostDirective  # type: ignore
 from docutils import nodes
 from sphinx.application import Sphinx
+from sphinx.builders import Builder
+from sphinx.config import Config
 from sphinx.writers.html5 import HTML5Translator
 
 
@@ -24,7 +26,7 @@ def slugify(string: Any) -> str:
     """
     string = normalize("NFKC", str(string))
     string = re.sub(r"[^\w\s-]", "", string).strip()
-    return re.sub(r"[-\s]+", "-", string)
+    return re.sub(r"[-\s]+", "_", string)
 
 
 class frontmatter(nodes.Element, nodes.General):
@@ -53,8 +55,13 @@ class PagesPostDirective(PostDirective):
         return nodes + [node]
 
 
+def bind_slugify(app: Sphinx, builder: Builder):
+    builder.templates.environment.filters["slugify"] = slugify
+
+
 def setup(app: Sphinx):
     app.setup_extension("ablog")
     blog.slugify = slugify
     app.add_node(frontmatter, html=(visit_frontmatter, depart_frontmatter))
     app.add_directive("post", PagesPostDirective, override=True)
+    app.connect("write-started", bind_slugify)
