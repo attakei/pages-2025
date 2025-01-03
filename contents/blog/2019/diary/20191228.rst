@@ -1,0 +1,77 @@
+=================
+週報(2019-12-23-)
+=================
+
+.. post:: 2019-12-28
+   :category: Diary
+   :tags: Qiita,
+
+vigi
+====
+
+ひどいレベルの勢いで、 `Pythonその2 Advent Calendar <https://qiita.com/advent-calendar/2019/python2>`_ に参加して記事書いてきた。
+
+.. textlint-disable
+
+* 社内でも社外でも、手に取る言語の種類が単一でない
+* ``workstation`` プロジェクトの方で ``dotfiles`` 枠で ``.gitignore`` を管理するのがちょっと考えもの
+
+.. textlint-enable
+
+みたいなきっかけで、 ``lazygit`` よろしくTUIでの.gitignore管理する方法がないかを考えてみたのがきっかけ。
+
+とりあえず、 ``vigi`` という名前でMVPがてら野良パッケージにはしたので、
+育てる気になれるかとかは後で考えてみるつもり。
+
+Qiita Advent Calendar 振り返り
+==============================
+
+最終的に5記事書いてた。以下参照リンク
+
+* NIJIBOX 3記事
+
+  * `Wantedlyの自社ストーリーをスクレイピング出来るように、レスポンスをパースする <https://qiita.com/attakei/items/9c0e548b5dd127f1af07>`_
+  * `RaspberryPiがネットワーク接続したときに、接続環境を通知させたい <https://qiita.com/attakei/items/ffadd703476bbec0f011>`_
+  * `Firebaseのrobots.txtをドメイン単位で振り分けてみる <https://qiita.com/attakei/items/a34faa6a74bcb54ec15f>`_
+
+* Ansible 1記事
+
+  * `Ansibleのcopyモジュールはどうやって冪等性を担保しているのか <../read-ansible-copy-modules/index.html>`_
+
+* Pythonその2 1記事
+
+  * `いい感じなgitignoreエディタ作れないかなと思ったので、とりあえずMVPっぽいのを作ってみた <https://qiita.com/attakei/items/ab18ff5b421151e8c152>`_
+  * ↑の ``vigi`` のこと
+
+言葉のこと
+==========
+
+.. oembed:: https://twitter.com/attakei/status/1210505934709018624
+
+.. oembed:: https://twitter.com/attakei/status/1210950334471737345
+
+週報ソースは自動生成で
+======================
+
+* GitHub Actionsのワークフローで
+* スケジュールされた定期的な処理を
+* 特定のブランチ上でのみ実施したい
+
+という要件のスニペット
+
+.. code-block:: yaml
+
+    # yamllint disable-line rule:truthy
+    on:
+      schedule:
+        - cron: '30 3 * * 1'
+
+    jobs:
+      create:
+        strategy:
+          matrix:
+            refs:
+              - refs/heads/master
+
+``on`` はスケジュールイベントとプッシュイベントが排他っぽくて、
+解消するためにはジョブの側でブランチ制御する必要があるらしい。

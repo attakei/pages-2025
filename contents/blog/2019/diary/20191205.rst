@@ -1,0 +1,37 @@
+================
+日報(2019-12-05)
+================
+
+.. post:: 2019-12-05
+   :category: Diary
+   :tags: Python,Sphinx,
+
+Python
+======
+
+* Google Colaboratoryが地味に便利。
+
+  * 非エンジニア向けにはフォーム機能でコードを隠す+Markdownで忌避感をなくせる気配がする
+  * 極力可読性の高いコードを意識して、「GSuite界のVBA」みたいな扱いにならないようには気をつけたいところ
+
+* ``sphinxcontrib-gtagjs``
+
+  * `作った <https://pypi.org/project/sphinxcontrib-gtagjs>`_
+  * ``sphinxcontrib-googleanalytics`` はあるけれど、Googleが「gtag.js使おう」って言ってるから自作
+  * 割と流用しつつで、シンプルに実装できたと思う。テストは今後
+  * (READMEをドラフトのままアップロードしちゃって、いきなりパッチバージョンの更新したのは内緒)
+
+* サイト更新
+
+  * ``oembed`` でSpeakerDeckを取れるようにしたので、雑に埋め込んでる。
+
+    * ``/speaks`` 配下あたり(もうない)
+
+  * カスタム404も出るようになってる
+
+    * 最初、doctreeに載せたくないけどワーニングも出したくないんだけど、ってなってた
+    * ``:orphan:`` で解決
+
+.. container:: has-text-centered
+
+    .. oembed:: https://twitter.com/attakei/status/1202468316217888768?s=20

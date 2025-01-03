@@ -1,0 +1,8 @@
+PS C:\Users\attakei\works\attakei\website> & c:/Users/attakei/works/attakei/website/.venv/Scripts/activate.ps1
+& : このシステムではスクリプトの実行が無効になっているため、ファイル C:\Users\attakei\works\attakei\website\.venv\Scripts\activate.ps1 を読み込むことができません。詳細については、「about_Execution_Policies」(https://go.microsoft.com/fwlink/?LinkID=135170) を参照してください。
+発生場所 行:1 文字:3
++ & c:/Users/attakei/works/attakei/website/.venv/Scripts/activate.ps1
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : セキュリティ エラー: (: ) []、PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+PS C:\Users\attakei\works\attakei\website>

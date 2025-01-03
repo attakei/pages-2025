@@ -1,0 +1,37 @@
+$ date > test.txt && cp test.txt var && stat var/test.txt
+  File: var/test.txt
+  Size: 32              Blocks: 8          IO Block: 4096   regular file
+Device: 10305h/66309d   Inode: 446998103   Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/ attakei)   Gid: (  985/   users)
+Access: 2019-12-08 23:39:01.628030154 +0900
+Modify: 2019-12-08 23:42:18.812931334 +0900
+Change: 2019-12-08 23:42:18.812931334 +0900
+ Birth: 2019-12-08 23:39:01.628030154 +0900
+$ date > test.txt && cp test.txt var && stat var/test.txt
+  File: var/test.txt
+  Size: 32              Blocks: 8          IO Block: 4096   regular file
+Device: 10305h/66309d   Inode: 446998103   Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/ attakei)   Gid: (  985/   users)
+Access: 2019-12-08 23:39:01.628030154 +0900
+Modify: 2019-12-08 23:42:25.529653015 +0900
+Change: 2019-12-08 23:42:25.529653015 +0900
+ Birth: 2019-12-08 23:39:01.628030154 +0900
+$ date >> test.txt && cp test.txt var && stat var/test.txt
+  File: var/test.txt
+  Size: 64              Blocks: 8          IO Block: 4096   regular file
+Device: 10305h/66309d   Inode: 446998103   Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/ attakei)   Gid: (  985/   users)
+Access: 2019-12-08 23:39:01.628030154 +0900
+Modify: 2019-12-08 23:42:31.103031998 +0900
+Change: 2019-12-08 23:42:31.103031998 +0900
+ Birth: 2019-12-08 23:39:01.628030154 +0900
+$ rm test.txt
+$ date > test.txt && cp test.txt var && stat var/test.txt
+  File: var/test.txt
+  Size: 32              Blocks: 8          IO Block: 4096   regular file
+Device: 10305h/66309d   Inode: 446998103   Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/ attakei)   Gid: (  985/   users)
+Access: 2019-12-08 23:42:34.633060910 +0900
+Modify: 2019-12-08 23:43:51.577024235 +0900
+Change: 2019-12-08 23:43:51.577024235 +0900
+ Birth: 2019-12-08 23:39:01.628030154 +0900

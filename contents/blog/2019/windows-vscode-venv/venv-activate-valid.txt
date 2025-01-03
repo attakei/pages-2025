@@ -1,0 +1,2 @@
+PS C:\Users\attakei\works\attakei\website> & c:/Users/attakei/works/attakei/website/.venv/Scripts/activate.ps1
+(.venv) PS C:\Users\attakei\works\attakei\website>
