@@ -4,6 +4,13 @@ Works
 
 社外公表可能な活動全般。
 
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   oss/index
+   speak/index
+
 所属/肩書
 =========
 
@@ -29,16 +36,14 @@ sphinx-revealjs
 `age-cli <https://age.attakei.dev>`_
   ライブラリのバージョン更新補助ツール。
 
+※詳細は :doc:`個別ページ </works/oss/index>` を参照。
+
 登壇など
 ========
 
 各所の技術イベントにて、登壇発表などを実施。
-詳細は下記のページを参照。
 
-.. toctree::
-   :maxdepth: 1
-
-   speak/index
+※詳細は :doc:`個別ページ </works/speak/index>` を参照。
 
 技術同人誌
 ==========
