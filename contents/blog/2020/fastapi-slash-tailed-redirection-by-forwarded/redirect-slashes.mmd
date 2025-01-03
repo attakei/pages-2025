@@ -1,0 +1,7 @@
+sequenceDiagram;
+    participant C as Browser
+    participant S as Web Server
+    C ->> S: GET /api/data
+    S -->> C: Location: /api/data/
+    C ->> S: GET /api/data/
+    S ->> C: 200 OK

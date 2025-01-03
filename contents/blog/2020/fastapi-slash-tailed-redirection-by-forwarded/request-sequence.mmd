@@ -1,0 +1,10 @@
+sequenceDiagram;
+    participant C as Browser
+    participant F as Firebase 
+    participant S as Cloud Run
+    C ->> F: GET /api/data
+    F ->> S: GET /api/data
+    S -->> F: Location: example.a.run.app/api/data/
+    F -->> C: Location: example.a.run.app/api/data/
+    C ->> S: GET /api/data/
+    S ->> C: 200 OK

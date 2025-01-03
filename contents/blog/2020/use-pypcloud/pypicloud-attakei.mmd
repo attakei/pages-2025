@@ -1,0 +1,7 @@
+flowchart LR;
+    Storage["GCS<br>for Storage"]
+    Cache["Firestore<br>for Cache"]
+    PyPICloud["Cloud Run<br>for PyPICloud"]
+    Firebase["Firebase Hosting"]
+
+    Storage <--> Cache <--> PyPICloud <--> Firebase

@@ -18,6 +18,7 @@ extensions = [
     "oembedpy.ext.sphinx",
     "sphinx_last_updated_by_git",
     "sphinx_sitemap",
+    "sphinxcontrib.mermaid",
     "sphinxnotes.strike",
     # Private
     "pages",

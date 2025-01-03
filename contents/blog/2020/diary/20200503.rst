@@ -1,0 +1,36 @@
+=================
+週報(2020-04-27-)
+=================
+
+.. post:: 2020-05-03
+   :category: Diary
+   :tags: WordPress,Composer,sphinx-revealjs,
+
+WordPressとcomposer
+===================
+
+* 会社での利用どころを思いついて、トライアル
+* うまく設定すれば、安定して使えそう
+* 副次効果として、Dockernizeが容易になった気がする
+
+sphinx-revealjsが使われてた
+===========================
+
+.. oembed:: https://twitter.com/playpausenstop/status/1255903512854245380
+
+* https://igordavydenko.com/slides/lvivpy-9/#/
+
+聖剣伝説3 ToM 1週目完走
+=======================
+
+* 「 :doc:`./20200426` 」の続き。予定通りのクラスチェンジ進行でクリア
+* 追加シナリオの7章まで完走。色んな意味で、リメイクの追加コンテンツらしい内容
+* 最終的に、ジェノアの初戦以外はそこまで大きく苦戦しなかった
+* 基本的にデバフを適切にかけ、死なないように気をつけるぐらいで良いバランスだった
+
+training-nim
+============
+
+* https://github.com/attakei-sandbox/training-nim
+* GWの素振り代わりに、お題を用意してやってみることに
+

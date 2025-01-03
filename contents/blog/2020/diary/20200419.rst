@@ -1,0 +1,48 @@
+=================
+週報(2020-04-13-)
+=================
+
+.. post:: 2020-04-19
+   :category: Diary
+   :tags: Python,Sphinx,Reveal.js,sphinx-revealjs,
+
+今週の雑多なやつ
+
+sphinx-revealjs
+===============
+
+* ver0.11を作ったのは、Reveal.jsプラグインを自作して、自分のスライドに組み込みたかったため
+* スライド自体は書き途中
+
+sphinxcontrib-gtagjs
+====================
+
+* https://github.com/attakei/sphinxcontrib-gtagjs
+* なんか動きに違和感があったので、少し手直しして ``0.2.0`` にした
+* 違和感自体はブラウザのスクリプトブロックだったので、実装自体は無駄足
+
+Slackの新UI
+===========
+
+Slackの中でも一番利用頻度の高い、自社ワークスペースが新UIになった。
+
+* セクションの仕様が、正直中途半端。スターとセクションの挙動を分けてほしかった
+* Mentions & Reactionsの位置移動は、割とわかりやすくなって良いと思う
+* Unread onlyにしてた人にとっては、さほど恩恵がなさそう？
+
+その他
+======
+
+* ABC163は割とあっさり気味にCまで正解出せたけど、unratedになってしまった
+* | Kyash Cardが届いたので、クレジット情報入れ替え中。
+  | ところで、いきなりカードロックになったけど何だったんだろう（ユーザーで解除できるやつ）
+
+書いた
+======
+
+* :doc:`/blog/2020/sphinx-revealjs-0-11`
+
+読んだ
+======
+
+* https://www.archlinux.site/2020/04/pacmanp11-kit-trustso-exists-in.html

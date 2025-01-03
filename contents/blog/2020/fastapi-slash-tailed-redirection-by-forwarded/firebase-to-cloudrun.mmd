@@ -1,0 +1,5 @@
+flowchart TD;
+    FE["Firebase Hosting"]
+    BE["Cloud Run"]
+
+    FE -- "<small>Host: example.a.run.app<br>X-Forwarded-Host: example.web.app</small>" --> BE
