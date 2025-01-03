@@ -119,7 +119,7 @@ PyPICloudはプライベートでPyPIサーバーを動作させるための実�
 用意したPyPICloud環境
 =====================
 
-https://pypi.attakie.net/
+https://pypi.attakei.net/
 
 構成
 ----

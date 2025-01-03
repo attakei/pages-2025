@@ -23,7 +23,7 @@
 SphinxCon JP 2018のスライド
 ===========================
 
-* `引っ越した </slides/sphinxconjp-2018/>`_
+* :strike:`引っ越した` -> `更にこちらへ <https://slides.attakei.net/sphinxconjp-2018/>`_
 * 色々な変遷でスライドが散らばってるので、これを機にちょくちょく統合している最中
 
 

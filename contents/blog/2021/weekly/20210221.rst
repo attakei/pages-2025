@@ -20,9 +20,11 @@ ASGI周りの新しめの情報を聞けたので有意義だった。
 
 あとで、Hypercornに手を出してみる予定。
 
-.. figure:: https://attakei.net/uploads/2021/pycharity-quiz-2nd.png
+.. warning:: 画像が行方不明
 
-    記念写真
+.. .. figure:: https://attakei.net/uploads/2021/pycharity-quiz-2nd.png
+
+      記念写真
 
 サイトの内部構造を整理
 ======================

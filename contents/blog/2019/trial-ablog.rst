@@ -28,8 +28,8 @@ ABlogを試している。
 素のsphinx-quickstartからABlogを始めたときに最低限必要な設定
 ------------------------------------------------------------
 
-* https://ablog.readthedocs.io/index.html
-* https://ablog.readthedocs.io/manual/ablog-configuration-options.html
+* https://ablog.readthedocs.io/en/stable/index.html
+* https://ablog.readthedocs.io/en/stable/manual/ablog-configuration-options.html
 
 素の状態から `ablog` を有効にするまでは問題ないけれど、
 ``make html`` が失敗してしまう。

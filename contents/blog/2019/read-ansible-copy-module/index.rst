@@ -17,7 +17,7 @@ Ansibleのcopyモジュールはどうやって冪等性を担保しているの
 `「Ansibleを通じて「べき等性」を理解してみよう」 <https://pycon.jp/2019/sessions?sessionId=221>`_
 というトークをしました。
 
-* `HTML版 <https://attakei.net/slides/pyconjp-2019>`_
+* `HTML版 <https://slides.attakei.net/pyconjp-2019>`_
 * `PDF版 <https://speakerdeck.com/attakei/try-understanding-idempotency-by-ansible>`_
 
 このトークではAnsibeの冪等性担保のアプローチを ``yum`` モジュールで理解したのですが、

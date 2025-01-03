@@ -53,6 +53,27 @@ html_theme_options = {
     "navbar_search": True,
 }
 
+# -- Options for Linkcheck output
+linkcheck_ignore = [
+    r"https://atnd.org/.*",
+    r"http://minorichihara.com/summerchampion2019/",
+    r"http://www.foxmovies-jp.com/odyssey/",
+    r"http://www.pacificrim.jp/",
+    r"https://conference2019.laravel.jp/",  # Certificate expired
+    r"https://igordavydenko.com/slides/lvivpy-9/#/",
+    r"https://pypi.attakei.net.+",
+    r"https://speakerdeck.com/skyjoker/ansiblefalsexue-xi-huan-jing-wovspheredezuo-tuteruohua",
+    r"https://sphinx-revealjs.readthedocs.io/en/v0.11.0/",
+    r"https://sphinx-rtd-revealjs.readthedocs.io/en/latest/",
+    r"https://docs.google.com/presentation/d/1yVjHN_35xPih3X3tlXgwpmxftLlCP8raC-i-1k5KJLc/edit#slide=id.p",
+    r"https://github.com/.+",
+]
+linkcheck_anchors_ignore_for_url = [
+    r"https://pypi.org/.+",
+    r"https://github.com/.+",
+    r"https://slides.com/.+",
+]
+
 # -- Options for extensions
 # sphinx.ext.todo
 todo_include_todos = True

@@ -42,6 +42,6 @@ http://www.slideshare.net/shinout/coffeescript-56416623
    <blockquote class="twitter-tweet" lang="ja"><p lang="ja" dir="ltr">CodeIQ忘年会の帰り中。自分視点だとスクリーンやストリームの奥でしか見ることができない人の話を聞いたり顔を見られたりする機会はやっぱり大切 <a href="https://twitter.com/hashtag/codeiq39?src=hash">#codeiq39</a></p>&mdash; attakei (@attakei) <a href="https://twitter.com/attakei/status/679605875233828865">2015, 12月 23</a></blockquote>
    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-.. _TensorFlow: _https://www.tensorflow.org/
+.. _TensorFlow: https://www.tensorflow.org/
 .. _Google Cloud Vision API: https://cloud.google.com/vision/
 .. _@shinout : https://twitter.com/shinout
