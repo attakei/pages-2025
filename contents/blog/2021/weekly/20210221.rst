@@ -1,0 +1,60 @@
+=================
+週報(2021-02-15-)
+=================
+
+.. post:: 2021-02-21
+   :category: Diary
+   :tags: Zenn,Python,Firebase,
+
+小さくてもトピックめいたことがあるときぐらいは、インデックス代わりに週報しよう。
+
+Python Charity Talks in Japan 2021.02
+=====================================
+
+Zoomウェビナー枠で参加。
+
+https://www.youtube.com/watch?v=cjV3uTWtTyg
+
+去年のPyCon JP 2020では無かったパッケージングの話を聞けたり、
+ASGI周りの新しめの情報を聞けたので有意義だった。
+
+あとで、Hypercornに手を出してみる予定。
+
+.. figure:: https://attakei.net/uploads/2021/pycharity-quiz-2nd.png
+
+    記念写真
+
+サイトの内部構造を整理
+======================
+
+登壇資料のHTMLスライドが全部バラバラのリポジトリになっている関係で、
+どこかのタイミングでサイトリソースを束ねる振る舞いをさせていたのだが、
+これを土日で少し手直しした。
+どこかで記事にする予定。
+
+* Before:
+
+  * 各スライドを全部バラバラのCloud Runにして、 ``firebase.json`` で振り分け
+  * どう見てもオーバーエンジニアリングです
+
+* After:
+
+  * 各スライドのHTMLを全部収集してサイトに統合後、Firebase Hostingとして配信
+  * 体感でスライドの初速は速くなった気がする
+
+Zenn
+====
+
+`CI/CDのためのFirebase スタンドアロンバイナリ <https://zenn.dev/attakei/articles/firebase-tools-on-cicd>`_ という記事を書いた。
+
+Firebase CLIのためだけに ``package.json`` やら ``yarn.lock`` やらを用意してたのを、
+これで除外できたので有意義な情報入手だった。
+
+とはいえ改めて考えると、いつ頃からスタンドアロンバイナリがあったかは気になる。
+Firebase CLIに関しては、使い方が ``--help`` でなんとなくわかるのでドキュメントを読むことを意識してなかった。
+
+こぼれ話
+========
+
+自分用に ``oembed`` ディレクティブを再実装して使ってるんだけど、
+YouTube動画のIFRAMEのサイズが小さすぎて首かしげてる。
