@@ -94,5 +94,6 @@ sitemap_excludes = [
 ]
 # pages
 pages_template_rule = {
+    "index": "index.html",
     "404": "error.html",
 }

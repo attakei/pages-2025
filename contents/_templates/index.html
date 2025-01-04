@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% set embedded = True %}
+{% set title = docstitle %}
+
+{%- block content %}
+<div class="section">
+  <div class="columns">
+    <main class="column is-two-thirds is-offset-2 content">
+      {{ body }}
+    </main>
+  </div>
+</div>
+{% endblock %}
