@@ -45,8 +45,6 @@ html_last_updated_fmt = "%Y-%m-%d %H:%M:%S"
 html_last_updated_use_utc = True
 html_theme = "pages-2025"
 html_theme_options = {
-    "globaltoc_includehidden": False,
-    "globaltoc_maxdepth": 2,
     "bulmaswatch": "flatly",
     "color_mode": "light",
     "logo_description": "attakeiのあれこれ置き場。ノート/ブログ/登壇記録など。",

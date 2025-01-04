@@ -6,7 +6,7 @@ Notes
 ブログ側と違って、各ページを適宜更新するタイプとなっている予定。
 
 .. toctree::
-   :maxdepth: 2
+   :titlesonly:
    :glob:
 
    */index
