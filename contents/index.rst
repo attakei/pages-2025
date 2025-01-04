@@ -28,13 +28,18 @@ Home
 
          ブログなど
 
-      .. postlist:: 10
+      .. postlist:: 5
          :date: %Y/%m/%d
          :format: {date} : {title}
 
    .. container:: column
 
       .. figure:: /_static/images/icon-attakei.jpg
+
+      :doc:`「何をやっているか」を知る時 </works/index>`
+      /
+      :doc:`「何を考えているか」を知る時 </notes/index>`
+
 
 SNSを眺める
 ===========
