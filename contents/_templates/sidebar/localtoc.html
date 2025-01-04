@@ -4,4 +4,14 @@
   * Local toc renders on body.
   * It implements toc modal.
 #}
-{% include '!sidebar/localtoc.html' %}
+{% if display_toc %}
+  <details class="block" id="sidebar-toc">
+    <summary class="subtitle">{{ _('Table of Contents') }}</summary>
+    <aside class="menu">
+      {{ toc }}
+      <script>
+        document.currentScript.parentNode.querySelectorAll("ul").forEach(el => el.classList.add("menu-list"));
+      </script>
+    </aside>
+  </details>
+{% endif %}
