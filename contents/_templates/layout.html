@@ -1,5 +1,72 @@
 {%- extends '!layout.html' -%}
 
+{%- block header %}
+<nav class="navbar is-sticky" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" style="font-weight: bold; font-size: 110%" href="{{ pathto(root_doc)|e }}">
+      {{ docstitle }}
+    </a>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="site-navbar">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="site-navbar" class="navbar-menu">
+    <div class="navbar-start">
+      {% for tree in root_toctree_dict(True) %}
+      <a class="navbar-item" href={{ tree.uri }}>
+        {{ tree.title }}
+      </a>
+      {% endfor %}
+      {% for site in theme_navbar_links %}
+      <a class="navbar-item" href={{ site.url }} target="_blank" rel="noreferrer noopener">
+        <span class="icon-text">
+          <span>
+            {{ site.title }}
+          </span>
+          <span class="icon">
+            <i class="fas fa-xs fa-external-link"></i>
+          </span>
+        </span>
+      </a>
+      {% endfor %}
+    </div>
+
+    <div class="navbar-end">
+      {% if theme_navbar_search %}
+      <div class="navbar-item">
+        <form method="get" action="{{ pathto('search') }}" role="search">
+          <div class="field has-addons">
+            <div class="control">
+              <input class="input" type="text" placeholder="{{ _('Search') }}" name="q" aria-label="{{ _('Search') }}">
+            </div>
+            <div class="control">
+              <button class="button is-info">
+                {{ _('Search') }}
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      {% endif %}
+      {% for item in theme_navbar_icons %}
+      <a class="navbar-item" href="{{ item.url }}" target="_blank" rel="noreferrer noopener">
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas {{ item.icon }}"></i>
+          </span>
+          <span>{{ item.label }}</span>
+        </span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</nav>
+{% endblock %}
+
 {%- block footer %}
 <footer class="footer has-text-right">
   <div class="level">
