@@ -4,7 +4,9 @@ stylesheets = ["style.css"]
 sidebars = [
     "sidebar/logo.html",
     "sidebar/line.html",
+    "sidebar/localtoc.html",
     "sidebar/globaltoc.html",
+    "ablog/sidebar/summary.html",
     "sidebar/navigation.html",
 ]
 

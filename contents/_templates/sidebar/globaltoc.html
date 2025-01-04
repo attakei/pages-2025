@@ -1,0 +1,13 @@
+<div class="block">
+  <h3 class="subtitle">{{ _('Contents') }}</h3>
+  <aside class="menu">
+    {% if pagename.startswith('blog/') %}
+      {{ toctree(includehidden=theme_globaltoc_includehidden, titles_only=True, collapse=theme_globaltoc_collapse, maxdepth=1) }}
+    {% else %}
+      {{ toctree(includehidden=theme_globaltoc_includehidden, titles_only=True, collapse=theme_globaltoc_collapse, maxdepth=theme_globaltoc_maxdepth) }}
+    {% endif %}
+    <script>
+      document.currentScript.parentNode.querySelectorAll("ul").forEach(el => el.classList.add("menu-list"));
+    </script>
+  </aside>
+</div>
