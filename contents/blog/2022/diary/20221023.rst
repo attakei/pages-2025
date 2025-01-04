@@ -5,7 +5,6 @@ Sphinx拡張とその土台周りを整理していた週
 .. post:: 2022-10-23
    :category: Diary
    :tags: Python,Sphinx,oEmbed,
-   :redirect: blog/2022/diary/20221023
 
 2022/10/17～2022/10/23あたりの振り返りメモ。
 

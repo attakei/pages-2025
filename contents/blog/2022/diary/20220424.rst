@@ -5,7 +5,6 @@ sphinx-revealjsをトリガーに色々と動いてた週
 .. post:: 2022-04-24
    :category: Diary
    :tags: Python,Sphinx,sphinx-revealjs,
-   :redirect: blog/2022/weekly/20220424
 
 sphinx-revealjsのv2.xに向けて、色々と動かしていました。
 

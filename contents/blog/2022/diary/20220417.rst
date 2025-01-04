@@ -5,7 +5,6 @@
 .. post:: 2022-04-17
    :category: Diary
    :tags: Sphinx,Python,COVID-19,Webサイト,
-   :redirect: blog/2022/weekly/20220417
 
 今週のふわっとした振り返りなど。
 

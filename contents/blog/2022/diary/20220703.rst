@@ -5,7 +5,6 @@ PyScriptやTauriで遊んでいた週
 .. post:: 2022-07-03
    :category: Diary
    :tags: Python,Sphinx,PyScript,
-   :redirect: blog/2022/weekly/20220703
 
 2022/06/27～2022/07/03あたりの振り返りメモ。
 

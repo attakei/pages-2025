@@ -5,7 +5,6 @@ sphinx-revealjs v2をリリースした週etc
 .. post:: 2022-06-26
    :category: Diary
    :tags: Sphinx,sphinx-revealjs,健康,
-   :redirect: blog/2022/weekly/20220619
 
 2022/06/13～2022/06/26あたりの振り返りメモ。
 

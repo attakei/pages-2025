@@ -5,7 +5,6 @@
 .. post:: 2022-09-11
    :category: Diary
    :tags: Sphinx,Pipedream,技術書典,
-   :redirect: blog/2022/diary/20220911
 
 2022/09/01～2022/09/11あたりの振り返りメモ。ちょっと色々と面白い状況になったので忘れずにちゃんとする。
 

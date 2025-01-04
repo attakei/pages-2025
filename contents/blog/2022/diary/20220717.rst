@@ -5,7 +5,6 @@ PyCon JPに採択されたり、Sphinx拡張の改修をしていた週
 .. post:: 2022-07-17
    :category: Diary
    :tags: Sphinx,PyCon JP,
-   :redirect: blog/2022/weekly/20220619
 
 2022/07/11～2022/07/17あたりの振り返りメモ。
 
