@@ -557,9 +557,15 @@ dependencies = [
     { name = "sphinx" },
     { name = "sphinx-last-updated-by-git" },
     { name = "sphinx-sitemap" },
+    { name = "sphinxcontrib-gtagjs" },
     { name = "sphinxcontrib-mermaid" },
     { name = "sphinxext-opengraph" },
     { name = "sphinxnotes-strike" },
+]
+
+[package.optional-dependencies]
+deploy = [
+    { name = "sphinxcontrib-gtagjs" },
 ]
 
 [package.dev-dependencies]
@@ -584,6 +590,8 @@ requires-dist = [
     { name = "sphinx", specifier = ">=8.1.3" },
     { name = "sphinx-last-updated-by-git", specifier = ">=0.3.8" },
     { name = "sphinx-sitemap", specifier = ">=2.6.0" },
+    { name = "sphinxcontrib-gtagjs", specifier = ">=0.2.1" },
+    { name = "sphinxcontrib-gtagjs", marker = "extra == 'deploy'", specifier = ">=0.2.1" },
     { name = "sphinxcontrib-mermaid", specifier = ">=1.0.0" },
     { name = "sphinxext-opengraph", specifier = ">=0.9.1" },
     { name = "sphinxnotes-strike", specifier = ">=1.2.1" },
@@ -904,6 +912,15 @@ sdist = { url = "https://files.pythonhosted.org/packages/f6/d2/5beee64d3e4e747f3
 wheels = [
     { url = "https://files.pythonhosted.org/packages/35/7a/987e583882f985fe4d7323774889ec58049171828b58c2217e7f79cdf44e/sphinxcontrib_devhelp-2.0.0-py3-none-any.whl", hash = "sha256:aefb8b83854e4b0998877524d1029fd3e6879210422ee3780459e28a1f03a8a2", size = 82530 },
 ]
+
+[[package]]
+name = "sphinxcontrib-gtagjs"
+version = "0.2.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "sphinx" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/76/81/63d8832f82656a1d4208eccf7caa441370e274b560d2a6d56a9cc80afd57/sphinxcontrib-gtagjs-0.2.1.tar.gz", hash = "sha256:46423c2e9313396bc8872bc1cc40bebd862cac976c21811390b081b33738886b", size = 3294 }
 
 [[package]]
 name = "sphinxcontrib-htmlhelp"

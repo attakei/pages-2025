@@ -26,6 +26,11 @@ classifiers = [
 [project.scripts]
 gen-og-image = "pages.og_image:main"
 
+[project.optional-dependencies]
+deploy = [
+    "sphinxcontrib-gtagjs>=0.2.1",
+]
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"

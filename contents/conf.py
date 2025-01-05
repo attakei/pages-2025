@@ -105,3 +105,15 @@ pages_template_rule = {
     "index": "index.html",
     "404": "error.html",
 }
+
+# -- Options for environments
+# For production/staging build
+if os.environ.get("SITE_ENV") in ["production", "staging"]:
+    extensions += [
+        "sphinxcontrib.gtagjs",
+    ]
+
+    # sphinxcontrib-gtagjs
+    gtagjs_ids = [
+        id_ for id_ in os.environ.get("SITE_GTAGJS_IDS", "").split(",") if id_ != ""
+    ]
