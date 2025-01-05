@@ -16,7 +16,6 @@ extensions = [
     # Third-party extensions
     "pages.ext.ablog",
     "oembedpy.ext.sphinx",
-    "sphinx_last_updated_by_git",
     "sphinx_sitemap",
     "sphinxcontrib.mermaid",
     "sphinxnotes.strike",
@@ -110,6 +109,7 @@ pages_template_rule = {
 # For production/staging build
 if os.environ.get("SITE_ENV") in ["production", "staging"]:
     extensions += [
+        "sphinx_last_updated_by_git",
         "sphinxcontrib.gtagjs",
     ]
 

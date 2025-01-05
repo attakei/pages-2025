@@ -555,7 +555,6 @@ dependencies = [
     { name = "click" },
     { name = "oembedpy" },
     { name = "sphinx" },
-    { name = "sphinx-last-updated-by-git" },
     { name = "sphinx-sitemap" },
     { name = "sphinxcontrib-mermaid" },
     { name = "sphinxext-opengraph" },
@@ -564,6 +563,7 @@ dependencies = [
 
 [package.optional-dependencies]
 deploy = [
+    { name = "sphinx-last-updated-by-git" },
     { name = "sphinxcontrib-gtagjs" },
 ]
 
@@ -587,7 +587,7 @@ requires-dist = [
     { name = "click", specifier = ">=8.1.8" },
     { name = "oembedpy", specifier = ">=0.7.2" },
     { name = "sphinx", specifier = ">=8.1.3" },
-    { name = "sphinx-last-updated-by-git", specifier = ">=0.3.8" },
+    { name = "sphinx-last-updated-by-git", marker = "extra == 'deploy'", specifier = ">=0.3.8" },
     { name = "sphinx-sitemap", specifier = ">=2.6.0" },
     { name = "sphinxcontrib-gtagjs", marker = "extra == 'deploy'", specifier = ">=0.2.1" },
     { name = "sphinxcontrib-mermaid", specifier = ">=1.0.0" },
