@@ -30,7 +30,7 @@ exclude_patterns = []
 language = "ja"
 
 # -- Options for HTML output
-html_baseurl = os.environ.get("SITE_BASE_URL", "/")
+html_baseurl = os.environ.get("SITE_BASEURL", "/")
 html_static_path = ["_static"]
 html_extra_path = ["_extra/robots.txt"]
 html_title = "attakei pages"
