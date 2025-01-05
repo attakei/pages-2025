@@ -8,6 +8,8 @@ dependencies = [
     "ablog>=0.11.12",
     "atsphinx-bulma>=0.2.0",
     "atsphinx-footnotes>=0.2.0",
+    "cairosvg>=2.7.1",
+    "click>=8.1.8",
     "oembedpy>=0.7.2",
     "sphinx-last-updated-by-git>=0.3.8",
     "sphinx-sitemap>=2.6.0",
@@ -20,6 +22,9 @@ license = "Apache-2.0"
 classifiers = [
     "Private :: Do Not Upload"
 ]
+
+[project.scripts]
+gen-og-image = "pages.og_image:main"
 
 [build-system]
 requires = ["hatchling"]
