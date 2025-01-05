@@ -1,0 +1,44 @@
+name: Deploy to site
+
+on:
+  push:
+    branches:
+      - 'main'
+  workflow_dispatch:
+
+jobs:
+  build:
+    environment: 'production'
+    runs-on: 'ubuntu-latest'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: jdx/mise-action@v2
+      - name: Configure environment
+        run: |
+          uv sync --frozen --extra=deploy
+      - name: Build site contents
+        run: |
+          task build
+        env:
+          SITE_BASEURL: 'https://attakei.net'
+          SITE_ENV: 'production'
+          SITE_GTAGJS_IDS: ${{ secrets.SITE_GTAGJS_IDS }}
+      - uses: actions/upload-artifact@v3
+        with:
+          name: site-contents
+          path: build/dirhtml
+  upload:
+    environment: 'production'
+    runs-on: 'ubuntu-latest'
+    needs: build
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          name: site-contents
+          path: public
+      - name: Publish
+        uses: cloudflare/wrangler-action@2.0.0
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages publish public --project-name=${{ secrets.CLOUDFLARE_PAGES_NAME }}
