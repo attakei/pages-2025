@@ -1,4 +1,5 @@
 import os
+from urllib.parse import urlparse
 
 # -- Project information
 project = "attakei pages"
@@ -20,6 +21,8 @@ extensions = [
     "sphinx_sitemap",
     "sphinxcontrib.mermaid",
     "sphinxnotes.strike",
+    # Wrapped third-party extensions
+    "pages.ext.opengraph",
     # Private
     "pages",
 ]
@@ -92,6 +95,11 @@ sitemap_excludes = [
     "search/",
     "genindex/",
 ]
+# sphinxext.opengraph
+ogp_site_url = html_baseurl
+ogp_social_cards = {
+    "enable": False,
+}
 # pages
 pages_template_rule = {
     "index": "index.html",
