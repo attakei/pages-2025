@@ -1,5 +1,4 @@
 import os
-from urllib.parse import urlparse
 
 # -- Project information
 project = "attakei pages"

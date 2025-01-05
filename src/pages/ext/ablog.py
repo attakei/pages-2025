@@ -8,7 +8,6 @@ from ablog.post import PostDirective  # type: ignore
 from docutils import nodes
 from sphinx.application import Sphinx
 from sphinx.builders import Builder
-from sphinx.config import Config
 from sphinx.writers.html5 import HTML5Translator
 
 
