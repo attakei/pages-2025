@@ -25,3 +25,9 @@ def setup(app: Sphinx):
 
     sphinxext.opengraph.get_description = get_description
     app.setup_extension("sphinxext.opengraph")
+    return {
+        "version": "0",
+        "env_version": 1,
+        "parallel_read_safe": True,
+        "parallel_write_safe": True,
+    }

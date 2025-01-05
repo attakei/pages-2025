@@ -65,3 +65,9 @@ def setup(app: Sphinx):
     app.add_node(frontmatter, html=(visit_frontmatter, depart_frontmatter))
     app.add_directive("post", PagesPostDirective, override=True)
     app.connect("write-started", bind_slugify)
+    return {
+        "version": "0",
+        "env_version": 1,
+        "parallel_read_safe": True,
+        "parallel_write_safe": True,
+    }
