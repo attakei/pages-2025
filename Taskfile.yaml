@@ -25,6 +25,11 @@ tasks:
     dir: '{{.TASKFILE_DIR}}'
     cmds:
       - '{{.RUN_PYTHON}} sphinx-autobuild -b {{.SPHINX_DEFAULT_BUILD}} {{.SPHINX_SOURCE_DIR}} {{.SPHINX_OUTPUT_DIR}}/dirhtml'
+  image:
+    desc: 'Generate og image'
+    dir: '{{.TASKFILE_DIR}}'
+    cmds:
+      - '{{.RUN_PYTHON}} gen-og-image --format=png contents/_static/images/og-image.png'
   build-*:
     desc: 'Make docs'
     dir: '{{.TASKFILE_DIR}}'
@@ -35,6 +40,7 @@ tasks:
   build:
     desc: 'Make docs (default target)'
     deps:
+      - 'image'
       - 'build-{{.SPHINX_DEFAULT_BUILD}}'
   help:
     desc: 'Display help of docs'
@@ -44,3 +50,5 @@ tasks:
     desc: 'Clean build files of docs'
     deps:
       - 'build-clean'
+    cmds:
+      - 'rm -rf contents/_static/images/og-*'
