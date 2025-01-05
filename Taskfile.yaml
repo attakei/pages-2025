@@ -36,12 +36,14 @@ tasks:
     vars:
       TARGET: '{{index .MATCH 0}}'
     cmds:
-      - '{{.RUN_PYTHON}} sphinx-build -M {{.TARGET}} {{.SPHINX_SOURCE_DIR}} {{.SPHINX_OUTPUT_DIR}}'
+      - '{{.RUN_PYTHON}} sphinx-build -M {{.TARGET}} {{.SPHINX_SOURCE_DIR}} {{.SPHINX_OUTPUT_DIR}} {{.SPHINX_OPTIONS}}'
   build:
     desc: 'Make docs (default target)'
     deps:
       - 'image'
-      - 'build-{{.SPHINX_DEFAULT_BUILD}}'
+      - task: 'build-{{.SPHINX_DEFAULT_BUILD}}'
+        vars:
+          SPHINX_OPTIONS: '-j auto'
   help:
     desc: 'Display help of docs'
     deps:
