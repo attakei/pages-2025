@@ -100,6 +100,7 @@ ogp_site_url = html_baseurl
 ogp_social_cards = {
     "enable": False,
 }
+ogp_image = "_static/images/og-image.png"
 # pages
 pages_template_rule = {
     "index": "index.html",
