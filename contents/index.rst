@@ -24,7 +24,7 @@ Home
 
    .. container:: column
 
-      .. container:: title
+      .. container:: subtitle
 
          ブログなど
 
@@ -32,28 +32,31 @@ Home
          :date: %Y/%m/%d
          :format: {date} : {title}
 
+      .. container:: subtitle
+
+         ショートカット
+
+      * :doc:`「何をやっているか」を知りたい時 </works/index>`
+      * :doc:`「何を考えているか」を知りたい時 </notes/index>`
+      * `GitHubでの主要活動を知りたい時 <https://github.com/attakei>`_
+      * `Xでの活動などを知りたい時 <https://x.com/attakei>`_
+
    .. container:: column
 
       .. figure:: /_static/images/icon-attakei.jpg
 
-      :doc:`「何をやっているか」を知る時 </works/index>`
-      /
-      :doc:`「何を考えているか」を知る時 </notes/index>`
+      .. figure:: https://api.githubtrends.io/user/svg/attakei/repos?time_range=one_year&include_private=True&loc_metric=changed&theme=classic
+         :alt: Most contiribution repositories on GitHub
 
+         Most contiribution repositories on GitHub.
+         Powered by `GitHub Trends <https://www.githubtrends.io/>`_.
 
 SNSを眺める
 ===========
 
 .. container:: columns
 
-   .. container:: column
-
-      .. raw:: html
-
-         <a class="twitter-timeline" href="https://twitter.com/attakei?ref_src=twsrc%5Etfw">Tweets by attakei</a>
-         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-   .. container:: column
+   .. container:: column is-half is-offset-3
 
       .. raw:: html
 
