@@ -50,6 +50,16 @@ html_theme_options = {
     "color_mode": "light",
     "logo_description": "attakeiのあれこれ置き場。ノート/ブログ/登壇記録など。",
     "navbar_search": True,
+    "navbar_icons": [
+        {
+            "icon": "fa-brands fa-solid fa-bluesky fa-2x",
+            "url": "https://bsky.app/profile/attakei.dev",
+        },
+        {
+            "icon": "fa-brands fa-solid fa-x-twitter fa-2x",
+            "url": "https://x.com/attakei",
+        },
+    ],
 }
 
 # -- Options for Linkcheck output
