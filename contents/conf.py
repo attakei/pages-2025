@@ -13,6 +13,7 @@ extensions = [
     "sphinx.ext.todo",
     # My extensions
     "atsphinx.footnotes",
+    "atsphinx.goto_top",
     # Third-party extensions
     "pages.ext.ablog",
     "oembedpy.ext.sphinx",

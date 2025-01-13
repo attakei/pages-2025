@@ -68,6 +68,18 @@ wheels = [
 ]
 
 [[package]]
+name = "atsphinx-goto-top"
+version = "0.1.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "sphinx" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/9a/e9/b8fcd2c94ded4f52cafafef23b3cb01581fa8973646c05b7cfaa0078f0d4/atsphinx_goto_top-0.1.2.tar.gz", hash = "sha256:c3ad1b22cc65135c7edf219a37e293727a1af946d1ec0fa0dc288a3e288f4c65", size = 76425 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/7e/c3/672ac721230cb7bea061252bfac00bf11ecafbbf89f1fdf0a203efc477d0/atsphinx_goto_top-0.1.2-py3-none-any.whl", hash = "sha256:7d6b23c6f83aa3b0c2562e6a9a2d0bdb88c1526ef52b42e174eb5447ab739168", size = 8163 },
+]
+
+[[package]]
 name = "attrs"
 version = "24.3.0"
 source = { registry = "https://pypi.org/simple" }
@@ -551,6 +563,7 @@ dependencies = [
     { name = "ablog" },
     { name = "atsphinx-bulma" },
     { name = "atsphinx-footnotes" },
+    { name = "atsphinx-goto-top" },
     { name = "cairosvg" },
     { name = "click" },
     { name = "oembedpy" },
@@ -583,6 +596,7 @@ requires-dist = [
     { name = "ablog", specifier = ">=0.11.12" },
     { name = "atsphinx-bulma", specifier = ">=0.2.0" },
     { name = "atsphinx-footnotes", specifier = ">=0.2.0" },
+    { name = "atsphinx-goto-top", specifier = ">=0.1.2" },
     { name = "cairosvg", specifier = ">=2.7.1" },
     { name = "click", specifier = ">=8.1.8" },
     { name = "oembedpy", specifier = ">=0.7.2" },
