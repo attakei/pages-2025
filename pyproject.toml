@@ -9,6 +9,7 @@ dependencies = [
     "atsphinx-bulma>=0.2.0",
     "atsphinx-footnotes>=0.2.0",
     "atsphinx-goto-top>=0.1.2",
+    "atsphinx-toybox[lindera-search]>=2025.1.11",
     "cairosvg>=2.7.1",
     "click>=8.1.8",
     "oembedpy>=0.7.2",

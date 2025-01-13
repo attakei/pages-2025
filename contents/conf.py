@@ -62,6 +62,9 @@ html_theme_options = {
         },
     ],
 }
+html_search_options = {
+    "type": "atsphinx.toybox.lindera_search.LinderaSplitter",
+}
 
 # -- Options for Linkcheck output
 linkcheck_ignore = [
