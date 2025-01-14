@@ -2,7 +2,7 @@
   <h3 class="subtitle">{{ _('Navigation') }}</h3>
   <aside class="buttons has-addons is-centered">
     {%- if prev %}
-      <a class="button" title="Prev page" href="{{ prev.link|e}}">
+      <a class="button internal" title="Prev page" href="{{ prev.link|e}}">
         <span class="icon is-small">
           <i class="fas fa-arrow-left"></i>
         </span>
@@ -15,7 +15,7 @@
       </button>
     {% endif %}
     {%- if parents %}
-      <a class="button" title="Parent page" href="{{ parents[0].link|e }}">
+      <a class="button internal" title="Parent page" href="{{ parents[0].link|e }}">
         <span class="icon is-small">
           <i class="fas fa-arrow-up"></i>
         </span>
@@ -27,14 +27,14 @@
         </span>
       </button>
     {% else %}
-      <a class="button" title="Parent page" href="/">
+      <a class="button internal" title="Parent page" href="/">
         <span class="icon is-small">
           <i class="fas fa-arrow-up"></i>
         </span>
       </a>
     {% endif %}
     {%- if next %}
-      <a class="button" title="Next page" href="{{ next.link|e }}">
+      <a class="button internal" title="Next page" href="{{ next.link|e }}">
         <span class="icon is-small">
           <i class="fas fa-arrow-right"></i>
         </span>

@@ -14,6 +14,7 @@ extensions = [
     # My extensions
     "atsphinx.footnotes",
     "atsphinx.goto_top",
+    "atsphinx.htmx_boost",
     # Third-party extensions
     "pages.ext.ablog",
     "oembedpy.ext.sphinx",
@@ -113,6 +114,8 @@ ogp_social_cards = {
     "enable": False,
 }
 ogp_image = "_static/images/og-image.png"
+# atsphinx.htmx-boost
+htmx_boost_preload = "mouseover"
 # pages
 pages_template_rule = {
     "index": "index.html",

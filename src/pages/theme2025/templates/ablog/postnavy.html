@@ -3,7 +3,7 @@
 <div class="columns">
   <div class="column has-text-left">
     {% if post.next %}
-    <a href="{{ pathto(post.next.docname) }}{{ anchor(post.next) }}">
+    <a class="internal" href="{{ pathto(post.next.docname) }}{{ anchor(post.next) }}">
       <i class="fas fa-arrow-circle-left"></i>
       <br>
       <span>{{ post.next.title }}</span>
@@ -14,7 +14,7 @@
   </div>
   <div class="column has-text-right">
     {% if post.prev %}
-    <a href="{{ pathto(post.prev.docname) }}{{ anchor(post.prev) }}">
+    <a class="internal" href="{{ pathto(post.prev.docname) }}{{ anchor(post.prev) }}">
       <i class="fas fa-arrow-circle-right"></i>
       <br>
       <span>{{ post.prev.title }}</span>

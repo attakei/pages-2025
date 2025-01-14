@@ -80,6 +80,33 @@ wheels = [
 ]
 
 [[package]]
+name = "atsphinx-helper"
+version = "0.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "sphinx" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/f7/25/490d1eba593b84b765f0b8bfc5191eb32b6083b544cdc79635b100f060f5/atsphinx_helper-0.1.0.tar.gz", hash = "sha256:ab90517b61884c3ddc711630f67705e067878f37332fc9a0f8c443823153e8cc", size = 6043 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5e/b7/f12611cf57e1dbf7b363d8dc24b0aa28a364a0ed8d502f495bb1d72f8018/atsphinx_helper-0.1.0-py3-none-any.whl", hash = "sha256:b499ddf7150305461a4ad9ce84a4c36db660e6a2ac89bda10e060a0725b4cd0b", size = 2639 },
+]
+
+[[package]]
+name = "atsphinx-htmx-boost"
+version = "0.2.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "atsphinx-helper" },
+    { name = "beautifulsoup4" },
+    { name = "lxml" },
+    { name = "sphinx" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/3d/a5/f35b0fb6abe0d8ce10f1480d3e1897965567e4ea1b45ad3c8c352e2ee81e/atsphinx_htmx_boost-0.2.2.tar.gz", hash = "sha256:82e31dde428b6292aadab6b0ba6053cbd36510c9d5a8a0ee44a774c199d90bd5", size = 56188 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/75/12/bb3bb77b1b43db5feee52932d5294f46af0d2d218eb5f565073d8d8b6fa0/atsphinx_htmx_boost-0.2.2-py3-none-any.whl", hash = "sha256:42541352b9533fc6231fb722aa16a3f384258676633027c3cd692cc370cc064c", size = 6754 },
+]
+
+[[package]]
 name = "atsphinx-toybox"
 version = "2025.1.11"
 source = { registry = "https://pypi.org/simple" }
@@ -618,6 +645,7 @@ dependencies = [
     { name = "atsphinx-bulma" },
     { name = "atsphinx-footnotes" },
     { name = "atsphinx-goto-top" },
+    { name = "atsphinx-htmx-boost" },
     { name = "atsphinx-toybox", extra = ["lindera-search"] },
     { name = "cairosvg" },
     { name = "click" },
@@ -652,6 +680,7 @@ requires-dist = [
     { name = "atsphinx-bulma", specifier = ">=0.2.0" },
     { name = "atsphinx-footnotes", specifier = ">=0.2.0" },
     { name = "atsphinx-goto-top", specifier = ">=0.1.2" },
+    { name = "atsphinx-htmx-boost", specifier = ">=0.2.2" },
     { name = "atsphinx-toybox", extras = ["lindera-search"], specifier = ">=2025.1.11" },
     { name = "cairosvg", specifier = ">=2.7.1" },
     { name = "click", specifier = ">=8.1.8" },
