@@ -57,6 +57,9 @@ docutils-ast-writer = { url = "https://github.com/attakei-sandbox/docutils-ast-w
 # [tool.uv.sources]
 # atsphinx-bulma = { path = "vendor/bulma", editable = true }
 
+[tool.doc8]
+ignore = ["D000"]
+
 [tool.hatch.metadata]
 allow-direct-references = true
 
