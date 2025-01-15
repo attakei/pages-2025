@@ -14,6 +14,7 @@ extensions = [
     # My extensions
     "atsphinx.footnotes",
     "atsphinx.goto_top",
+    "atsphinx.htmx_boost",
     # Third-party extensions
     "pages.ext.ablog",
     "oembedpy.ext.sphinx",
@@ -61,6 +62,9 @@ html_theme_options = {
             "url": "https://x.com/attakei",
         },
     ],
+}
+html_search_options = {
+    "type": "atsphinx.toybox.lindera_search.LinderaSplitter",
 }
 
 # -- Options for Linkcheck output
@@ -111,6 +115,8 @@ ogp_social_cards = {
     "enable": False,
 }
 ogp_image = "_static/images/og-image.png"
+# atsphinx.htmx-boost
+htmx_boost_preload = "mouseover"
 # pages
 pages_template_rule = {
     "index": "index.html",

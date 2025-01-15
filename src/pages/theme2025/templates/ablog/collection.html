@@ -25,18 +25,18 @@
     <div class="media-content">
       <div class="content">
         <p class="subtitle">
-          <a href="{{ postlink(post) }}">{{ post.title }}</a>
+          <a class="internal" href="{{ postlink(post) }}">{{ post.title }}</a>
         </p>
         <div class="ml-2">
           {{ post.to_html(collection.docname) }}
           <small>
             {{ post.date.strftime(ablog.post_date_format) }}
             //
-            <a href="{{ pathto(post.category[0].docname) }}">{{ post.category[0] }}</a>
+            <a class="internal" href="{{ pathto(post.category[0].docname) }}">{{ post.category[0] }}</a>
             //
             {% for tag in post.tags %}
               {% if not loop.first %}, {% endif %}
-              <a href="{{ pathto(tag.docname) }}">{{ tag }}</a>
+              <a class="internal" href="{{ pathto(tag.docname) }}">{{ tag }}</a>
             {% endfor %}
           </small>
         </div>

@@ -6,14 +6,14 @@
       </span>
       <span>{{ post.date }}</span>
     </span>
-    <a class="tag icon-text is-primary is-rounded" href="/blog/category/{{ post.category[0] }}/">
+    <a class="internal tag icon-text is-primary is-rounded" href="/blog/category/{{ post.category[0] }}/">
       <span class="icon">
         <i class="fas fa-solid fa-tags"></i>
       </span>
       <span>{{ post.category[0] }}</span>
     </a>
     {% for tag in post.tags %}
-      <a class="tag icon-text is-rounded" href="/blog/tag/{{ tag|slugify }}/">
+      <a class="internal tag icon-text is-rounded" href="/blog/tag/{{ tag|slugify }}/">
         <span class="icon">
           <i class="fas fa-solid fa-tags"></i>
         </span>
