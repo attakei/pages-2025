@@ -77,6 +77,7 @@ linkcheck_ignore = [
     r"https://sphinx-rtd-revealjs.readthedocs.io/en/latest/",
     r"https://docs.google.com/presentation/d/1yVjHN_35xPih3X3tlXgwpmxftLlCP8raC-i-1k5KJLc/edit#slide=id.p",
     r"https://github.com/.+",
+    r"http://blog.lidalia.org.uk/2011/04/setting-default-java-file-encoding-to.html",
 ]
 linkcheck_anchors_ignore_for_url = [
     r"https://pypi.org/.+",
