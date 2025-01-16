@@ -4,7 +4,7 @@ PyCon JP 2019 の参加側感想
 
 .. post:: 2019-09-19
    :category: Tech
-   :tags: 技術イベント,Python,PyConJP,
+   :tags: 技術イベント,Python,PyCon JP,
    :redirect: blog/2019/pyconjp-2019/attendee
 
 PyCon JPに参加したので、一般参加枠視点での感想です。

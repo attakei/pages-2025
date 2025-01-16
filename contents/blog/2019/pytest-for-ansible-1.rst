@@ -4,7 +4,7 @@ AnsibleモジュールのテストをPy.testで書いてみる
 
 .. post:: 2019-05-24
    :category: Tech
-   :tags: python, ansible, pytest,
+   :tags: Python,Ansible,pytest,
 
 ちょっと野良Ansibleモジュールを作る感じになったので、
 「せっかくだからある程度テストコードも書いてみよう」と思い、
