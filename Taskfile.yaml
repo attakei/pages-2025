@@ -41,6 +41,7 @@ tasks:
     desc: 'Make docs (default target)'
     deps:
       - 'image'
+    cmds:
       - task: 'build-{{.SPHINX_DEFAULT_BUILD}}'
         vars:
           SPHINX_OPTIONS: '-j auto'
