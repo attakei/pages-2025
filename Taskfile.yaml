@@ -30,6 +30,16 @@ tasks:
     dir: '{{.TASKFILE_DIR}}'
     cmds:
       - '{{.RUN_PYTHON}} gen-og-image --format=png contents/_static/images/og-image.png'
+  build-site:
+    desc: 'Make for deployment site'
+    deps:
+      - 'build'
+    cmds:
+      - task: 'build-html'
+        vars:
+          SPHINX_OPTIONS: 'contents/404.rst'
+      - 'cp build/html/404.html build/dirhtml/'
+      - 'rm -rf build/dirhtml/404/'
   build-*:
     desc: 'Make docs'
     dir: '{{.TASKFILE_DIR}}'

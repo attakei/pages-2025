@@ -21,7 +21,7 @@ jobs:
           uv sync --frozen --extra=deploy
       - name: Build site contents
         run: |
-          task build
+          task build-site
         env:
           SITE_BASEURL: 'https://www.attakei.net'
           SITE_ENV: 'production'
