@@ -120,6 +120,7 @@ htmx_boost_preload = "mouseover"
 # pages
 pages_template_rule = {
     "index": "index.html",
+    "search": "search.html",
     "404": "error.html",
 }
 
