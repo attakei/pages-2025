@@ -23,7 +23,7 @@ jobs:
         run: |
           task build
         env:
-          SITE_BASEURL: 'https://attakei.net'
+          SITE_BASEURL: 'https://www.attakei.net'
           SITE_ENV: 'production'
           SITE_GTAGJS_IDS: ${{ secrets.SITE_GTAGJS_IDS }}
       - uses: actions/upload-artifact@v3
