@@ -15,6 +15,7 @@ extensions = [
     "atsphinx.footnotes",
     "atsphinx.goto_top",
     "atsphinx.htmx_boost",
+    "ogpy.adapters.sphinx",
     # Third-party extensions
     "pages.ext.ablog",
     "oembedpy.ext.sphinx",

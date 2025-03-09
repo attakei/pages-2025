@@ -43,6 +43,10 @@ atsphinx-toybox.pyproject
 
 .. [#] Zenn記事の冒頭にも書いたのですが、完全に遊び半分で作ってます。
 
+.. ogp-image:: https://zenn.dev/attakei/articles/sphinx-configuration-on-pyproject
+   :align: center
+   :width: 50%
+
 リンク
 ------
 

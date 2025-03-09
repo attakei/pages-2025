@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "ablog>=0.11.12",
-    "atsphinx-bulma>=0.2.0",
+    "atsphinx-bulma>=0.2.2",
     "atsphinx-footnotes>=0.2.0",
     "atsphinx-goto-top>=0.1.2",
     "atsphinx-htmx-boost>=0.2.2",
@@ -21,6 +21,7 @@ dependencies = [
     "sphinxnotes-strike>=1.2.1",
     "lxml>=5.3.0",
     "beautifulsoup4>=4.12.3",
+    "ogpy>=0.1.0",
 ]
 license = "Apache-2.0"
 classifiers = [
