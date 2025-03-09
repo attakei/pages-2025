@@ -30,9 +30,6 @@
 
 .. todo:: 随時ページを書きつつ「やったこと」に移動。
 
-* 登壇資料の作成
-* 英語力をつける
-* カンファレンス当日
 * (観光)
 
 やったこと
@@ -44,3 +41,6 @@
    submit-cfp
    make-passport
    make-schedule
+   create-presentation
+   skillup-english
+   conference-days
