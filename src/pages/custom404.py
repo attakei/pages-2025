@@ -27,7 +27,7 @@ def convert_404(app: Sphinx, exc: Exception | None):  # noqa: D103
     logger.info(f"Target source is {source}")
     logger.info(f"Target output is {dest}")
     diff = str(dest.parent.relative_to(source.parent, walk_up=True))
-    soup = BeautifulSoup(source.read_text(), "lxml")
+    soup = BeautifulSoup(source.read_text(encoding="utf8"), "lxml")
     # Convert path attributes
     for tag, attr in [
         ("link", "href"),
@@ -41,7 +41,7 @@ def convert_404(app: Sphinx, exc: Exception | None):  # noqa: D103
             if not elm[attr].startswith(diff):
                 continue
             elm[attr] = elm[attr][len(diff) :]
-    Path(dest).write_text(str(soup))
+    Path(dest).write_text(str(soup), encoding='utf8')
 
 
 def setup(app: Sphinx) -> ExtensionMetadata:
