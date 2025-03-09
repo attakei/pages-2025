@@ -1,4 +1,5 @@
 version = 1
+revision = 1
 requires-python = ">=3.12"
 
 [[package]]
@@ -630,6 +631,19 @@ wheels = [
 ]
 
 [[package]]
+name = "ogpy"
+version = "0.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "beautifulsoup4" },
+    { name = "httpx" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/28/89/ccc1fb0ad4e19e7434fcc301f201db647d27d77d9003e3d7d38a1249def3/ogpy-0.1.0.tar.gz", hash = "sha256:0df8cb1b57f5c9dd417c8c46bc32cf3aa575d7cc9c5f5c7dccffc1c61cc3926a", size = 58459 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ca/04/5c459c4b341ad4431674cfbad43cdffbef67ba19dc945d8ad1dadbfee07a/ogpy-0.1.0-py3-none-any.whl", hash = "sha256:8dd6529a08f9be7e92181d5c9d05c31849eab2ded9f8c94bc84e0da3581b9bd4", size = 10871 },
+]
+
+[[package]]
 name = "packaging"
 version = "24.2"
 source = { registry = "https://pypi.org/simple" }
@@ -654,6 +668,7 @@ dependencies = [
     { name = "click" },
     { name = "lxml" },
     { name = "oembedpy" },
+    { name = "ogpy" },
     { name = "sphinx" },
     { name = "sphinx-sitemap" },
     { name = "sphinxcontrib-mermaid" },
@@ -692,6 +707,7 @@ requires-dist = [
     { name = "click", specifier = ">=8.1.8" },
     { name = "lxml", specifier = ">=5.3.0" },
     { name = "oembedpy", specifier = ">=0.7.2" },
+    { name = "ogpy", specifier = ">=0.1.0" },
     { name = "sphinx", specifier = ">=8.1.3" },
     { name = "sphinx-last-updated-by-git", marker = "extra == 'deploy'", specifier = ">=0.3.8" },
     { name = "sphinx-sitemap", specifier = ">=2.6.0" },
@@ -700,6 +716,7 @@ requires-dist = [
     { name = "sphinxext-opengraph", specifier = ">=0.9.1" },
     { name = "sphinxnotes-strike", specifier = ">=1.2.1" },
 ]
+provides-extras = ["deploy"]
 
 [package.metadata.requires-dev]
 dev = [
