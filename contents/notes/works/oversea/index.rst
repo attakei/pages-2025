@@ -25,13 +25,6 @@
   Speakは「日本で英語の問いかけをされてギリギリ間違ってはない返しができる」ぐらい。
   Listenは「ほぼ出来ない」と言ってよい。
 
-やること
-========
-
-.. todo:: 随時ページを書きつつ「やったこと」に移動。
-
-* (観光)
-
 やったこと
 ==========
 
@@ -44,3 +37,4 @@
    create-presentation
    skillup-english
    conference-days
+   others
