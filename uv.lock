@@ -678,6 +678,9 @@ wheels = [
 bin = [
     { name = "pagefind-bin" },
 ]
+extended = [
+    { name = "pagefind-bin-extended" },
+]
 
 [[package]]
 name = "pagefind-bin"
@@ -688,6 +691,17 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/7f/38/9dc33f6bdb640eaab2b85194e627ee3070dee18365f88dfb187fe5572b6d/pagefind_bin-1.3.0-py3-none-manylinux_2_12_x86_64.manylinux2010_x86_64.musllinux_1_1_x86_64.whl", hash = "sha256:484c42e4c9b40a3d60e1058d0af8983697876f4e4c6de04c7a3b64bb7bb27b20", size = 10787442 },
     { url = "https://files.pythonhosted.org/packages/eb/48/1570b80dce613acc27c33bfe04a39908d6d5f03fa168d563f42cc6ef6053/pagefind_bin-1.3.0-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.musllinux_1_1_aarch64.whl", hash = "sha256:8b6a33f22fb2a2c69f10c79808f2b05689493f9e39047b4b6f4512313fa4191d", size = 10546755 },
     { url = "https://files.pythonhosted.org/packages/d6/99/dd5df044cd9dbd2f73c457b1029cedab3e6901a870f7151f0982bdb81a38/pagefind_bin-1.3.0-py3-none-win_amd64.whl", hash = "sha256:daff63ee03d4efe5666f3aa9cbf904358a82d9dd1b2f5628450bb72e7968377c", size = 10060363 },
+]
+
+[[package]]
+name = "pagefind-bin-extended"
+version = "1.3.0"
+source = { registry = "https://pypi.org/simple" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/21/9e/a458daca9b0dfa9f6d26de08e802db06fd86a5b25396c7d8e5cd409fa5ab/pagefind_bin_extended-1.3.0-py3-none-macosx_12_0_arm64.whl", hash = "sha256:69630e12a39d81016e6397fd9ce410c5bd75d12587d637d783270da01f094d2e", size = 57494052 },
+    { url = "https://files.pythonhosted.org/packages/f4/06/59abc03fd6ec7c2e8d55164c42051404d12bd9f26f58d72c0af76f68ce0d/pagefind_bin_extended-1.3.0-py3-none-manylinux_2_12_x86_64.manylinux2010_x86_64.musllinux_1_1_x86_64.whl", hash = "sha256:ab0b764556b69e222b71f3acd8cace4e0ea6cf03e50a231ef0e2b77280ef0424", size = 58140296 },
+    { url = "https://files.pythonhosted.org/packages/83/8f/03fbe38531ae33ca297f259b32355d2f2dd84adbe7e74525eb4de4fbc781/pagefind_bin_extended-1.3.0-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.musllinux_1_1_aarch64.whl", hash = "sha256:3852442a282bdd70d5df608a88c4bd4e57ba4c61bd549a34d75266ac9ffa6999", size = 57737448 },
+    { url = "https://files.pythonhosted.org/packages/01/b6/841ed57fc66beb0238f80cbf90e5d844b3de547ce7ad3ff0f1d8b1193fb4/pagefind_bin_extended-1.3.0-py3-none-win_amd64.whl", hash = "sha256:f001dbdc897f2af58505a38724da89de90543738389aa06edacdff195f8c314e", size = 57153519 },
 ]
 
 [[package]]
@@ -708,6 +722,7 @@ dependencies = [
     { name = "lxml" },
     { name = "oembedpy" },
     { name = "ogpy" },
+    { name = "pagefind", extra = ["extended"] },
     { name = "sphinx" },
     { name = "sphinx-sitemap" },
     { name = "sphinxcontrib-mermaid" },
@@ -748,6 +763,7 @@ requires-dist = [
     { name = "lxml", specifier = ">=5.3.0" },
     { name = "oembedpy", specifier = ">=0.7.2" },
     { name = "ogpy", specifier = ">=0.1.0" },
+    { name = "pagefind", extras = ["extended"], specifier = ">=1.3.0" },
     { name = "sphinx", specifier = ">=8.1.3" },
     { name = "sphinx-last-updated-by-git", marker = "extra == 'deploy'", specifier = ">=0.3.8" },
     { name = "sphinx-sitemap", specifier = ">=2.6.0" },
