@@ -45,15 +45,15 @@ wheels = [
 
 [[package]]
 name = "atsphinx-bulma"
-version = "0.2.2"
+version = "0.2.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "sphinx" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/6c/1f/e2da7465ecc77765ee0cb1a5d0df0b8caa3cfdb53fbb54c16fbd6e8051be/atsphinx_bulma-0.2.2.tar.gz", hash = "sha256:3eba004826ef25e8b5c3ac4f9de415d513f222a931fbe99716f577b2616c574d", size = 73772 }
+sdist = { url = "https://files.pythonhosted.org/packages/71/d2/e623abae5e55031506a71d802797f76aac4e84d37b5388674dd10eda41e8/atsphinx_bulma-0.2.4.tar.gz", hash = "sha256:bbfd304633b5d431b507a405f55e5aabcd5a30176649aa08807c80f82b591169", size = 73504 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/76/4e/ec11ca39fd8e4d5e37d3215aa34689e7bba6b6a5cfd3c86ef671720405a9/atsphinx_bulma-0.2.2-py3-none-any.whl", hash = "sha256:113a349da2215789e7e0eb91a4b3c97fa3d7505f24c08a5c13b407af88b66e11", size = 16172 },
+    { url = "https://files.pythonhosted.org/packages/2e/18/55a12ff02ae2ad40ad54c602ce02d3cb0010b06243c0c22311c31e74c398/atsphinx_bulma-0.2.4-py3-none-any.whl", hash = "sha256:0c520b11e9a3947f77b44d1c189d88b37b5de4ede4bde96dc3a44b9f877fc894", size = 15833 },
 ]
 
 [[package]]
@@ -105,6 +105,19 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/3d/a5/f35b0fb6abe0d8ce10f1480d3e1897965567e4ea1b45ad3c8c352e2ee81e/atsphinx_htmx_boost-0.2.2.tar.gz", hash = "sha256:82e31dde428b6292aadab6b0ba6053cbd36510c9d5a8a0ee44a774c199d90bd5", size = 56188 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/75/12/bb3bb77b1b43db5feee52932d5294f46af0d2d218eb5f565073d8d8b6fa0/atsphinx_htmx_boost-0.2.2-py3-none-any.whl", hash = "sha256:42541352b9533fc6231fb722aa16a3f384258676633027c3cd692cc370cc064c", size = 6754 },
+]
+
+[[package]]
+name = "atsphinx-pagefind"
+version = "0.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pagefind", extra = ["bin"] },
+    { name = "sphinx" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/e4/a8/0937b979330eeac54c8fb159cd7b8b5c69a536e858826274a36aa941d4c2/atsphinx_pagefind-0.1.0.tar.gz", hash = "sha256:19aa975262ba48d13dfd4b27cceba5270e27a6a560e30aa96107081ef07c343a", size = 77392 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/1f/d6/5b50e066a11033eeb02306709371337ad847e9a1694ad68f0e06e4885b9d/atsphinx_pagefind-0.1.0-py3-none-any.whl", hash = "sha256:3c7feee2fdc09b776706d7caa9d33ee21858a7dea836078d4cbeb8b115e0e7db", size = 7330 },
 ]
 
 [[package]]
@@ -653,6 +666,45 @@ wheels = [
 ]
 
 [[package]]
+name = "pagefind"
+version = "1.3.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/01/2e/355b7447b9d2ea087bdd9d07a5905933e4fb6ec33492c0f78a6fe61da9af/pagefind-1.3.0.tar.gz", hash = "sha256:9fab97ffa9a142ffb02fbaa57bc03394f0a9833913f24e60477aa90980646d9c", size = 9715 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/93/95/4e672687da654f0420338ddd9ab82340f5facb26c1c2afba08db192d6dd9/pagefind-1.3.0-py3-none-any.whl", hash = "sha256:50b324f1652c558e186a6c35608f7bfaba7b544f289a6514c3be4f3a20b02f52", size = 9999 },
+]
+
+[package.optional-dependencies]
+bin = [
+    { name = "pagefind-bin" },
+]
+extended = [
+    { name = "pagefind-bin-extended" },
+]
+
+[[package]]
+name = "pagefind-bin"
+version = "1.3.0"
+source = { registry = "https://pypi.org/simple" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/bd/08/b5d6e556ea15bcad3b0fff0cbb1243893a5a38dea5822a014cb7f5c702d8/pagefind_bin-1.3.0-py3-none-macosx_12_0_arm64.whl", hash = "sha256:3daed395cecc5cb2750c3bb4ed0427616017ad84f9ad1d5227e27d31bbdc8ccf", size = 10271255 },
+    { url = "https://files.pythonhosted.org/packages/7f/38/9dc33f6bdb640eaab2b85194e627ee3070dee18365f88dfb187fe5572b6d/pagefind_bin-1.3.0-py3-none-manylinux_2_12_x86_64.manylinux2010_x86_64.musllinux_1_1_x86_64.whl", hash = "sha256:484c42e4c9b40a3d60e1058d0af8983697876f4e4c6de04c7a3b64bb7bb27b20", size = 10787442 },
+    { url = "https://files.pythonhosted.org/packages/eb/48/1570b80dce613acc27c33bfe04a39908d6d5f03fa168d563f42cc6ef6053/pagefind_bin-1.3.0-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.musllinux_1_1_aarch64.whl", hash = "sha256:8b6a33f22fb2a2c69f10c79808f2b05689493f9e39047b4b6f4512313fa4191d", size = 10546755 },
+    { url = "https://files.pythonhosted.org/packages/d6/99/dd5df044cd9dbd2f73c457b1029cedab3e6901a870f7151f0982bdb81a38/pagefind_bin-1.3.0-py3-none-win_amd64.whl", hash = "sha256:daff63ee03d4efe5666f3aa9cbf904358a82d9dd1b2f5628450bb72e7968377c", size = 10060363 },
+]
+
+[[package]]
+name = "pagefind-bin-extended"
+version = "1.3.0"
+source = { registry = "https://pypi.org/simple" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/21/9e/a458daca9b0dfa9f6d26de08e802db06fd86a5b25396c7d8e5cd409fa5ab/pagefind_bin_extended-1.3.0-py3-none-macosx_12_0_arm64.whl", hash = "sha256:69630e12a39d81016e6397fd9ce410c5bd75d12587d637d783270da01f094d2e", size = 57494052 },
+    { url = "https://files.pythonhosted.org/packages/f4/06/59abc03fd6ec7c2e8d55164c42051404d12bd9f26f58d72c0af76f68ce0d/pagefind_bin_extended-1.3.0-py3-none-manylinux_2_12_x86_64.manylinux2010_x86_64.musllinux_1_1_x86_64.whl", hash = "sha256:ab0b764556b69e222b71f3acd8cace4e0ea6cf03e50a231ef0e2b77280ef0424", size = 58140296 },
+    { url = "https://files.pythonhosted.org/packages/83/8f/03fbe38531ae33ca297f259b32355d2f2dd84adbe7e74525eb4de4fbc781/pagefind_bin_extended-1.3.0-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.musllinux_1_1_aarch64.whl", hash = "sha256:3852442a282bdd70d5df608a88c4bd4e57ba4c61bd549a34d75266ac9ffa6999", size = 57737448 },
+    { url = "https://files.pythonhosted.org/packages/01/b6/841ed57fc66beb0238f80cbf90e5d844b3de547ce7ad3ff0f1d8b1193fb4/pagefind_bin_extended-1.3.0-py3-none-win_amd64.whl", hash = "sha256:f001dbdc897f2af58505a38724da89de90543738389aa06edacdff195f8c314e", size = 57153519 },
+]
+
+[[package]]
 name = "pages-proto-2025"
 version = "0.1.0"
 source = { editable = "." }
@@ -662,6 +714,7 @@ dependencies = [
     { name = "atsphinx-footnotes" },
     { name = "atsphinx-goto-top" },
     { name = "atsphinx-htmx-boost" },
+    { name = "atsphinx-pagefind" },
     { name = "atsphinx-toybox", extra = ["lindera-search"] },
     { name = "beautifulsoup4" },
     { name = "cairosvg" },
@@ -669,6 +722,7 @@ dependencies = [
     { name = "lxml" },
     { name = "oembedpy" },
     { name = "ogpy" },
+    { name = "pagefind", extra = ["extended"] },
     { name = "sphinx" },
     { name = "sphinx-sitemap" },
     { name = "sphinxcontrib-mermaid" },
@@ -701,6 +755,7 @@ requires-dist = [
     { name = "atsphinx-footnotes", specifier = ">=0.2.0" },
     { name = "atsphinx-goto-top", specifier = ">=0.1.2" },
     { name = "atsphinx-htmx-boost", specifier = ">=0.2.2" },
+    { name = "atsphinx-pagefind", specifier = ">=0.1.0" },
     { name = "atsphinx-toybox", extras = ["lindera-search"], specifier = ">=2025.1.11" },
     { name = "beautifulsoup4", specifier = ">=4.12.3" },
     { name = "cairosvg", specifier = ">=2.7.1" },
@@ -708,6 +763,7 @@ requires-dist = [
     { name = "lxml", specifier = ">=5.3.0" },
     { name = "oembedpy", specifier = ">=0.7.2" },
     { name = "ogpy", specifier = ">=0.1.0" },
+    { name = "pagefind", extras = ["extended"], specifier = ">=1.3.0" },
     { name = "sphinx", specifier = ">=8.1.3" },
     { name = "sphinx-last-updated-by-git", marker = "extra == 'deploy'", specifier = ">=0.3.8" },
     { name = "sphinx-sitemap", specifier = ">=2.6.0" },
