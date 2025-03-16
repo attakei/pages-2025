@@ -15,6 +15,8 @@ extensions = [
     "atsphinx.footnotes",
     "atsphinx.goto_top",
     "atsphinx.htmx_boost",
+    "atsphinx.pagefind",
+    "ogpy.adapters.sphinx",
     # Third-party extensions
     "pages.ext.ablog",
     "oembedpy.ext.sphinx",
@@ -118,10 +120,11 @@ ogp_social_cards = {
 ogp_image = "_static/images/og-image.png"
 # atsphinx.htmx-boost
 htmx_boost_preload = "mouseover"
+# atsphinx.pagefind
+pagefind_root_selector = "main"
 # pages
 pages_template_rule = {
     "index": "index.html",
-    "search": "search.html",
     "404": "error.html",
 }
 
