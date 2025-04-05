@@ -2,11 +2,11 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING
 
+from docutils import nodes
 
 if TYPE_CHECKING:
     from collections.abc import Iterable
 
-    from docutils import nodes
     from sphinx.application import Sphinx
 
 
