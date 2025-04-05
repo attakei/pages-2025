@@ -8,7 +8,7 @@ PyCon APAC 2025絡みのログやスライドの整理
 先日に行われた `PyCon APAC 2025 参加報告会 <https://pyconjp.connpass.com/event/349628/>`_ で、
 「初登壇者の参加報告」と「パネルディスカッション」をしてきました。
 
-.. container:: flex justify-center internal-presentation
+.. container:: flex justify-center internal-presentation ar-16-9
 
    .. oembed:: https://slides.attakei.net/pycon-apac-2025-report/
 

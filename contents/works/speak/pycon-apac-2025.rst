@@ -10,7 +10,7 @@ PyCon APAC 2025
 スライド
 ========
 
-.. container:: flex justify-center internal-presentation
+.. container:: flex justify-center internal-presentation ar-16-9
 
     .. oembed:: https://attakei.github.io/the-slide/
 
