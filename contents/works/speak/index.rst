@@ -9,7 +9,7 @@ YouTubeでアーカイブが公開されているものについては、
 .. toctree::
     :maxdepth: 1
 
-    pyconapac-2025
+    pycon-apac-2025
     pyconjp-2022
     pyconjp-2021
     jtf-2021
