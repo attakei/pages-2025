@@ -1,4 +1,4 @@
-from typing import Iterable
+from collections.abc import Iterable
 
 from docutils import nodes
 from sphinx.application import Sphinx
