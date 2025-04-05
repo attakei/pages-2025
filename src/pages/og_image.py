@@ -1,11 +1,18 @@
 """Image generator for opengraph."""
 
+from __future__ import annotations
+
 import base64
 from pathlib import Path
+from typing import TYPE_CHECKING
 
 import click
 from cairosvg import svg2png  # type: ignore
 from jinja2 import Template
+
+
+if TYPE_CHECKING:
+    pass
 
 
 TEMPLATES = {

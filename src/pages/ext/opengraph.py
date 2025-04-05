@@ -1,7 +1,13 @@
-from collections.abc import Iterable
+from __future__ import annotations
 
-from docutils import nodes
-from sphinx.application import Sphinx
+from typing import TYPE_CHECKING
+
+
+if TYPE_CHECKING:
+    from collections.abc import Iterable
+
+    from docutils import nodes
+    from sphinx.application import Sphinx
 
 
 def get_description(

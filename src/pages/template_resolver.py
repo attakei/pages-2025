@@ -1,8 +1,15 @@
 """Custom template management."""
 
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
+
 from docutils import nodes
-from sphinx.application import Sphinx
-from sphinx.util.typing import ExtensionMetadata
+
+if TYPE_CHECKING:
+    from typing import Any
+    from sphinx.application import Sphinx
+    from sphinx.util.typing import ExtensionMetadata
 
 RuleDict = dict[str, str]
 
@@ -11,7 +18,7 @@ def resolve_template_name(
     app: Sphinx,
     pagename: str,
     templatename: str,
-    context: dict,
+    context: dict[str, Any],
     doctree: nodes.document | None,
 ) -> str | None:
     rule: RuleDict = app.config.pages_template_rule

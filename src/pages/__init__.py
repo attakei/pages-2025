@@ -1,7 +1,13 @@
 """Private project for website."""
 
-from sphinx.application import Sphinx
-from sphinx.util.typing import ExtensionMetadata
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
+
+
+if TYPE_CHECKING:
+    from sphinx.application import Sphinx
+    from sphinx.util.typing import ExtensionMetadata
 
 
 def setup(app: Sphinx) -> ExtensionMetadata | None:

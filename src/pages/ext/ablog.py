@@ -1,14 +1,20 @@
+from __future__ import annotations
+
 import re
 from copy import deepcopy
-from typing import Any
+from typing import TYPE_CHECKING
 from unicodedata import normalize
 
 from ablog import blog  # type: ignore
 from ablog.post import PostDirective  # type: ignore
 from docutils import nodes
-from sphinx.application import Sphinx
-from sphinx.builders import Builder
-from sphinx.writers.html5 import HTML5Translator
+
+if TYPE_CHECKING:
+    from typing import Any
+
+    from sphinx.application import Sphinx
+    from sphinx.builders import Builder
+    from sphinx.writers.html5 import HTML5Translator
 
 
 def slugify(string: Any) -> str:

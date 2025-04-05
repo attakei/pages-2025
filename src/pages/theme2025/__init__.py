@@ -1,9 +1,13 @@
 """Theme entrypoint."""
 
-from pathlib import Path
+from __future__ import annotations
 
-from sphinx.application import Sphinx
-from sphinx.config import Config
+from pathlib import Path
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from sphinx.application import Sphinx
+    from sphinx.config import Config
 
 here = Path(__file__).parent
 

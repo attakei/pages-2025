@@ -1,12 +1,17 @@
 """Convert 404 document for not basic html build."""
 
+from __future__ import annotations
+
 from pathlib import Path
+from typing import TYPE_CHECKING
 
 from bs4 import BeautifulSoup
-from sphinx.application import Sphinx
-from sphinx.builders.html import StandaloneHTMLBuilder
 from sphinx.util.logging import getLogger
-from sphinx.util.typing import ExtensionMetadata
+
+if TYPE_CHECKING:
+    from sphinx.application import Sphinx
+    from sphinx.builders.html import StandaloneHTMLBuilder
+    from sphinx.util.typing import ExtensionMetadata
 
 logger = getLogger(__name__)
 
@@ -41,7 +46,7 @@ def convert_404(app: Sphinx, exc: Exception | None):  # noqa: D103
             if not elm[attr].startswith(diff):
                 continue
             elm[attr] = elm[attr][len(diff) :]
-    Path(dest).write_text(str(soup), encoding='utf8')
+    Path(dest).write_text(str(soup), encoding="utf8")
 
 
 def setup(app: Sphinx) -> ExtensionMetadata:
