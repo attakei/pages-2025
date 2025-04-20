@@ -11,3 +11,4 @@ PC環境周り
    :maxdepth: 1
 
    *
+   */index
