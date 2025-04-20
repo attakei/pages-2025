@@ -34,3 +34,14 @@ OSS向けプランが存在するもの
 
   * `Open Source Plan <https://www.netlify.com/legal/open-source-policy/>`_ が存在する。
   * 今のところはGitHub PagesとCloudflareで事足りているので、利用していない。
+  * 例えば、atsphinx全体とかをうまいこと統合管理出来るなら、試してみるのはありかも。
+
+* JetBrains
+
+  * IDE全般に `オープンソース向けライセンス <https://www.jetbrains.com/ja-jp/community/opensource/>`_ が存在する。
+  * 個人ライセンスを持っているが、利用頻度が下がっているので一旦こっちに切り替えるか検討。
+
+* DigitalOcean
+
+  * `DigitalOcean Credits for Open Source <https://www.digitalocean.com/open-source>`_ が存在する。
+  * ビルドが必要だったり、動的サイトを再管理したくなったときに検討したい。
