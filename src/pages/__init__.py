@@ -14,6 +14,7 @@ def setup(app: Sphinx) -> ExtensionMetadata | None:
     app.setup_extension("pages.theme2025")
     app.setup_extension("pages.template_resolver")
     app.setup_extension("pages.custom404")
+    app.setup_extension("pages.disclosure")
     return {
         "version": "0",
         "env_version": 1,
