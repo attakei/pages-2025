@@ -6,7 +6,7 @@ OSSの「コントリビューション」を「貢献」とすることの呪�
 
 少し前にBlueskyでふと思ったやつを、せっかくだしもう少し言語化してみたやつ。
 
-.. embed:: https://bsky.app/profile/attakei.dev/post/3lo4dp3oyu22z
+.. oembed:: https://bsky.app/profile/attakei.dev/post/3lo4dp3oyu22z
 
 OSSにおける「コントリビュート」の位置づけ
 =========================================
