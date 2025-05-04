@@ -32,7 +32,7 @@ OSS [#]_ に対する関わり方には様々な形式がある。
 ただ、この「貢献する」という表現が、不必要な部分での萎縮を発生させていたりしないだろうか？
 とふと考えてみた。
 
-.. [#] 
+.. [#]
   https://ejje.weblio.jp/content/contribute
   https://dictionary.goo.ne.jp/word/en/contribute/#ej-18912
   https://translate.google.co.jp/?sl=auto&tl=ja&text=contribute&op=translate
