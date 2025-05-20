@@ -9,6 +9,9 @@ on:
   pull_request:
   workflow_dispatch:
 
+env:
+  TASK_X_REMOTE_TASKFILES: 1
+
 jobs:
   lint:
     runs-on: ubuntu-latest
@@ -17,7 +20,7 @@ jobs:
       - uses: jdx/mise-action@v2
       - name: 'Setup env'
         run: |
-          task setup
+          task --yes setup
       - name: Lint by pre-commit
         run: |
           lefthook run pre-commit --all-files
@@ -28,7 +31,7 @@ jobs:
       - uses: jdx/mise-action@v2
       - name: 'Setup workspace'
         run: |
-          task setup
+          task --yes setup
       - name: Lint by pre-commit
         run: |
           lefthook run pre-commit --all-files
