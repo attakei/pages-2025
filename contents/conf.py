@@ -17,6 +17,7 @@ extensions = [
     "atsphinx.htmx_boost",
     "atsphinx.pagefind",
     "ogpy.adapters.sphinx",
+    "rst_package_refs.sphinx",
     # Third-party extensions
     "pages.ext.ablog",
     "oembedpy.ext.sphinx",
@@ -118,6 +119,8 @@ ogp_social_cards = {
     "enable": False,
 }
 ogp_image = "_static/images/og-image.png"
+# ogpy.adapters.sphinx
+# TODO: Set fuzzy option
 # atsphinx.htmx-boost
 htmx_boost_preload = "mouseover"
 # atsphinx.pagefind

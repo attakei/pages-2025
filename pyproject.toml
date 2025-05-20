@@ -24,6 +24,7 @@ dependencies = [
     "ogpy>=0.1.0",
     "atsphinx-pagefind>=0.1.0",
     "pagefind[extended]>=1.3.0",
+    "rst-package-refs>=0.1.0",
 ]
 license = "Apache-2.0"
 classifiers = [
