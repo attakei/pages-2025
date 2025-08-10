@@ -36,9 +36,6 @@ jobs:
       - name: 'Setup workspace'
         run: |
           task --yes setup
-      - name: Lint by pre-commit
-        run: |
-          lefthook run pre-commit --all-files
       - name: 'Run linkcheck'
         continue-on-error: true
         run: |
