@@ -18,7 +18,9 @@ jobs:
         with:
           timezoneLinux: "Asia/Tokyo"
       - uses: actions/checkout@v4
-      - uses: jdx/mise-action@v2
+      - uses: aquaproj/aqua-installer@d1fe50798dbadd4eb5b98957290ca175f6b4870f # v4.0.2
+        with:
+          aqua_version: v2.51.2
       - name: Configure environment
         run: |
           task --yes setup

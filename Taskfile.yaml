@@ -26,10 +26,18 @@ tasks:
     desc: 'Setup workspace'
     cmds:
       - 'uv sync --frozen --all-extras'
-      - 'pnpm i'
+      - 'volta run npm i'
       - 'lefthook install'
+  textlint:
+    desc: 'Run textlint'
+    cmds:
+      - '{{.RUN_PYTHON}} volta run npx textlint {{.CLI_ARGS}}'
+    vars:
+      RUN_PYTHON: 'uv run'
   image:
     desc: 'Generate og image'
     dir: '{{.TASKFILE_DIR}}'
     cmds:
       - '{{.RUN_PYTHON}} gen-og-image --format=png contents/_static/images/og-image.png'
+    vars:
+      RUN_PYTHON: 'uv run'
