@@ -10,7 +10,7 @@
 	"author": "",
 	"license": "Apache-2.0",
 	"dependencies": {
-		"textlint": "^14.2.0",
+		"textlint": "^15.0.0",
 		"textlint-filter-rule-comments": "^1.2.2",
 		"textlint-plugin-rst": "github:attakei-sandbox/textlint-plugin-rst#for-literal",
 		"textlint-rule-preset-japanese": "^10.0.3"
