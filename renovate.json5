@@ -6,22 +6,18 @@
     "github>attakei/workspace-configs//renovate/lefthook",
     "github>attakei/workspace-configs//renovate/taskfile",
   ],
-  "enabledManagers": [
-    "pep621",
-    "github-actions",
-    "custom.jsonata"
-  ],
+  "automerge": true,
   "packageRules": [
+    // NOTE: Workflow's python version must be kept because it is minimum require-python version.
     {
-      "matchPackageNames": ["attakei/workspace-configs"],
-      "groupName": "workspace-configs",
-      "matchUpdateTypes": ["major", "minor"],
-      "enabled": true,
-    },
-    {
-      "matchPackageNames": ["attakei/workspace-configs"],
-      "matchUpdateTypes": ["patch"],
+      "matchFileNames": [".python-version"],
       "enabled": false,
+    },
+    // NOTE: Require approve when it updates major version of deps
+    {
+      "matchDatasources": ["pypi"],
+      "matchUpdateTypes": ["major"],
+      "automerge": false,
     },
   ],
 }
