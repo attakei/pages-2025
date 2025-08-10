@@ -73,3 +73,9 @@ allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/pages"]
+
+[tool.ruff]
+extend-exclude = ["contents"]
+
+[tool.ty.src]
+exclude = ["contents"]
