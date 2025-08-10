@@ -31,7 +31,7 @@ tasks:
   textlint:
     desc: 'Run textlint'
     cmds:
-      - 'uv run volta run npx textlint {{.CLI_ARGS}}'
+      - '{{.RUN_PYTHON}} volta run npx textlint {{.CLI_ARGS}}'
   image:
     desc: 'Generate og image'
     dir: '{{.TASKFILE_DIR}}'
