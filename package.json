@@ -14,5 +14,9 @@
 		"textlint-filter-rule-comments": "^1.2.2",
 		"textlint-plugin-rst": "github:attakei-sandbox/textlint-plugin-rst#for-literal",
 		"textlint-rule-preset-japanese": "^10.0.3"
+	},
+	"volta": {
+		"node": "24.5.0",
+		"npm": "11.5.2"
 	}
 }
