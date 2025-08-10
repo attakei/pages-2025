@@ -29,7 +29,7 @@ def get_description(
 def setup(app: Sphinx):
     import sphinxext.opengraph  # type: ignore
 
-    sphinxext.opengraph.get_description = get_description
+    sphinxext.opengraph.get_description = get_description  # type: ignore[invalid-assignment]
     app.setup_extension("sphinxext.opengraph")
     return {
         "version": "0",

@@ -67,7 +67,7 @@ def bind_slugify(app: Sphinx, builder: Builder):
 
 def setup(app: Sphinx):
     app.setup_extension("ablog")
-    blog.slugify = slugify
+    blog.slugify = slugify  # type: ignore[invalid-assignment]
     app.add_node(frontmatter, html=(visit_frontmatter, depart_frontmatter))
     app.add_directive("post", PagesPostDirective, override=True)
     app.connect("write-started", bind_slugify)
