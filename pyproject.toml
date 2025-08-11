@@ -66,7 +66,7 @@ docutils-ast-writer = { url = "https://github.com/attakei-sandbox/docutils-ast-w
 
 [tool.doc8]
 max-line-length = 119
-ignore = ["D000"]
+ignore = ["D000", "D004"]
 
 [tool.hatch.metadata]
 allow-direct-references = true
