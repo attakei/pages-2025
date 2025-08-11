@@ -17,7 +17,7 @@ jobs:
       - uses: szenius/set-timezone@v2.0
         with:
           timezoneLinux: "Asia/Tokyo"
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: aquaproj/aqua-installer@d1fe50798dbadd4eb5b98957290ca175f6b4870f # v4.0.2
         with:
           aqua_version: v2.53.9
