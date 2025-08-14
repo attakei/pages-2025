@@ -26,12 +26,12 @@ tasks:
     desc: 'Setup workspace'
     cmds:
       - 'uv sync --frozen --all-extras'
-      - 'volta run npm i'
+      - 'bun install'
       - 'lefthook install'
   textlint:
     desc: 'Run textlint'
     cmds:
-      - '{{.RUN_PYTHON}} volta run npx textlint {{.CLI_ARGS}}'
+      - '{{.RUN_PYTHON}} bun x textlint {{.CLI_ARGS}}'
     vars:
       RUN_PYTHON: 'uv run'
   image:
