@@ -13,5 +13,5 @@ registries:
 packages:
 - name: evilmartians/lefthook@v1.12.3
 - name: go-task/task@v3.44.1
-- name: astral-sh/uv@0.8.11
+- name: astral-sh/uv@0.8.12
 - name: oven-sh/bun@bun-v1.2.20
