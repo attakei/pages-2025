@@ -24,3 +24,8 @@
     max-height: 100%;
   }
 }
+
+details.box {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}

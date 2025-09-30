@@ -24,6 +24,7 @@ extensions = [
     "sphinx_sitemap",
     "sphinxcontrib.mermaid",
     "sphinxnotes.strike",
+    'sphinx_toolbox.collapse',
     # Wrapped third-party extensions
     "pages.ext.opengraph",
     # Private
@@ -45,6 +46,7 @@ html_css_files = [
     "css/custom.css",
 ]
 html_js_files = [
+    "js/adjust-presentation.js",
     "https://kit.fontawesome.com/9da28e60fd.js",
 ]
 html_last_updated_fmt = "%Y-%m-%d %H:%M:%S"
