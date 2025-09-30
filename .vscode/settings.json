@@ -1,0 +1,9 @@
+{
+    "ty.interpreter": [
+        ".venv/Scripts/ty.exe"
+    ],
+    "esbonio.server.pythonPath": ".venv/bin/python",
+    "esbonio.server.pythonPath.windows": ".venv/Scripts/python.exe",
+    "python.defaultInterpreterPath": ".venv/bin/python",
+    "python.defaultInterpreterPath.windows": ".venv/Scripts/python.exe",
+}

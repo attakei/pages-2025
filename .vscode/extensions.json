@@ -1,6 +1,9 @@
 {
     "recommendations": [
         "swyddfa.esbonio",
-        "editorconfig.editorconfig"
+        "editorconfig.editorconfig",
+        "astral-sh.ty",
+        "vscodevim.vim",
+        "lextudio.restructuredtext"
     ]
 }
