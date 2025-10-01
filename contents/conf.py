@@ -16,6 +16,7 @@ extensions = [
     "atsphinx.goto_top",
     "atsphinx.htmx_boost",
     "atsphinx.pagefind",
+    "atsphinx.qrcode",
     "ogpy.adapters.sphinx",
     "rst_package_refs.sphinx",
     # Third-party extensions

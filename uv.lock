@@ -153,6 +153,19 @@ wheels = [
 ]
 
 [[package]]
+name = "atsphinx-qrcode"
+version = "0.2.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "qrcode" },
+    { name = "sphinx" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/38/98/0f230566a6524c7c463dc63c2194e2ce0aab02e8ce45d1a3faa48b5690ff/atsphinx_qrcode-0.2.0.tar.gz", hash = "sha256:44c526912f9a72a524ff2c573f3986e9ab767673e9456d0b61d7220f88d38d4d", size = 67613, upload-time = "2025-09-08T12:43:04.038Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/27/1d/07ae8d8570068f41293e2ca60456479b45cb036f4a8fecc6523117ab0138/atsphinx_qrcode-0.2.0-py3-none-any.whl", hash = "sha256:4f5beacf3cfedc15a7bea8d172140607c8d76b2368692612bd7cd552584c89a1", size = 5764, upload-time = "2025-09-08T12:43:02.312Z" },
+]
+
+[[package]]
 name = "atsphinx-toybox"
 version = "2025.1.11"
 source = { registry = "https://pypi.org/simple" }
@@ -867,6 +880,7 @@ dependencies = [
     { name = "atsphinx-goto-top" },
     { name = "atsphinx-htmx-boost" },
     { name = "atsphinx-pagefind" },
+    { name = "atsphinx-qrcode" },
     { name = "atsphinx-toybox", extra = ["lindera-search"] },
     { name = "beautifulsoup4" },
     { name = "cairosvg" },
@@ -911,6 +925,7 @@ requires-dist = [
     { name = "atsphinx-goto-top", specifier = ">=0.1.2" },
     { name = "atsphinx-htmx-boost", specifier = ">=0.2.2" },
     { name = "atsphinx-pagefind", specifier = ">=0.1.0" },
+    { name = "atsphinx-qrcode", specifier = ">=0.2.0" },
     { name = "atsphinx-toybox", extras = ["lindera-search"], specifier = ">=2025.1.11" },
     { name = "beautifulsoup4", specifier = ">=4.12.3" },
     { name = "cairosvg", specifier = ">=2.7.1" },
@@ -1076,6 +1091,18 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/fe/0f/25911a9f080464c59fab9027482f822b86bf0608957a5fcc6eaac85aa515/PyYAML-6.0.2-cp313-cp313-musllinux_1_1_x86_64.whl", hash = "sha256:68ccc6023a3400877818152ad9a1033e3db8625d899c72eacb5a668902e4d652", size = 751597, upload-time = "2024-08-06T20:32:56.985Z" },
     { url = "https://files.pythonhosted.org/packages/14/0d/e2c3b43bbce3cf6bd97c840b46088a3031085179e596d4929729d8d68270/PyYAML-6.0.2-cp313-cp313-win32.whl", hash = "sha256:bc2fa7c6b47d6bc618dd7fb02ef6fdedb1090ec036abab80d4681424b84c1183", size = 140527, upload-time = "2024-08-06T20:33:03.001Z" },
     { url = "https://files.pythonhosted.org/packages/fa/de/02b54f42487e3d3c6efb3f89428677074ca7bf43aae402517bc7cca949f3/PyYAML-6.0.2-cp313-cp313-win_amd64.whl", hash = "sha256:8388ee1976c416731879ac16da0aff3f63b286ffdd57cdeb95f3f2e085687563", size = 156446, upload-time = "2024-08-06T20:33:04.33Z" },
+]
+
+[[package]]
+name = "qrcode"
+version = "8.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colorama", marker = "sys_platform == 'win32'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/8f/b2/7fc2931bfae0af02d5f53b174e9cf701adbb35f39d69c2af63d4a39f81a9/qrcode-8.2.tar.gz", hash = "sha256:35c3f2a4172b33136ab9f6b3ef1c00260dd2f66f858f24d88418a015f446506c", size = 43317, upload-time = "2025-05-01T15:44:24.726Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/dd/b8/d2d6d731733f51684bbf76bf34dab3b70a9148e8f2cef2bb544fccec681a/qrcode-8.2-py3-none-any.whl", hash = "sha256:16e64e0716c14960108e85d853062c9e8bba5ca8252c0b4d0231b9df4060ff4f", size = 45986, upload-time = "2025-05-01T15:44:22.781Z" },
 ]
 
 [[package]]
