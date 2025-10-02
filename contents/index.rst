@@ -46,8 +46,7 @@ Home
 
       .. figure:: /_static/images/icon-attakei.jpg
 
-      .. figure:: https://api.githubtrends.io/user/svg/attakei/repos?time_range=one_year&include_private=True&loc_metric=changed&theme=classic
-         :alt: Most contiribution repositories on GitHub
+      .. figure:: https://github-readme-stats.vercel.app/api/top-langs?username=attakei
+         :alt: Top languages on GitHub
 
-         Most contiribution repositories on GitHub.
-         Powered by `GitHub Trends <https://www.githubtrends.io/>`_.
+         Powered by `GitHub Readme Stats <https://github.com/anuraghazra/github-readme-stats>`_
