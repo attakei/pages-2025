@@ -1,7 +1,7 @@
 PyCon JP 2025にスピーカーとして参加した
 =======================================
 
-.. post:: 2025-10-01
+.. post:: 2025-10-02
    :category: Tech
    :tags: Python,PyCon,PyConJP
 
