@@ -26,7 +26,7 @@ jobs:
           task --yes setup
       - name: Build site contents
         run: |
-          task build
+          task image build
         env:
           SITE_BASEURL: 'https://www.attakei.net'
           SITE_ENV: 'production'
