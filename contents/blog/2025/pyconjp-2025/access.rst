@@ -116,7 +116,7 @@ PyCon JP 2025開催地へのアクセス事情
     :widths: 20 80
     :width: 60%
     :align: center
-    
+
     * - ルート
       - こんな人向け
     * - 新幹線
