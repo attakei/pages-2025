@@ -29,3 +29,8 @@ details.box {
   margin-top: 1em;
   margin-bottom: 1em;
 }
+
+.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
