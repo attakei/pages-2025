@@ -19,11 +19,11 @@ charset = sjis
 
 
 # 2 space indentation
-[*.{yml,js,json,jsx,ts,tsx,json,rst,html,css,scss}]
+[*.{yml,yaml,js,json,jsx,ts,tsx,json,rst,html,css,scss}]
 indent_size = 2
 
 # 4 space indentation
-[*.{py,php,md}]
+[*.{py,php,md,toml}]
 indent_size = 4
 
 # Tab indentation (no size specified)
