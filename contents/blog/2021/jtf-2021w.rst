@@ -70,7 +70,9 @@ July Tech Festa 2021 winterに登壇しました
 その1
 -----
 
-.. oembed:: https://twitter.com/gkzvoice/status/1353215090586120192
+..
+   NOTE: 非公開アカウントになっていた
+   .. oembed:: https://twitter.com/gkzvoice/status/1353215090586120192
 
 IT系の会社で、自社の考え方（方向性・規則などで公開可能なもの）をGitHubで管理+公開しているところをたまに見かけますよね。
 この辺は「HEADを最新版として安定的に参照可能」「いつ、どんな理由で変化したかの追跡が可能」とそれなりに良いことがあるので、
@@ -79,9 +81,13 @@ IT系の会社で、自社の考え方（方向性・規則などで公開可能
 その2
 -----
 
-.. oembed:: https://twitter.com/gkzvoice/status/1353213964335738881
+..
+   NOTE: 非公開アカウントになっていた
+   .. oembed:: https://twitter.com/gkzvoice/status/1353213964335738881
 
-.. oembed:: https://twitter.com/gkzvoice/status/1353219335649546240
+..
+   NOTE: 非公開アカウントになっていた
+   .. oembed:: https://twitter.com/gkzvoice/status/1353219335649546240
 
 発表後にその場で聞かれた質問ツイートと、ひねり出した回答をまとめてくれたやつです。
 
