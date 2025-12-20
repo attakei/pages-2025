@@ -18,11 +18,10 @@ https://2025.pycon.jp/
     :maxdepth: 1
 
     発表内容について <speaker>
+    移動手段について <access>
 
 .. collapse:: 後ほど書く予定
     :class: box
 
-    * 発表内容について
     * 参加者側としての感想
-    * 移動手段について
     * 観光について
