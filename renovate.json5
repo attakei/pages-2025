@@ -8,8 +8,8 @@
     "github>attakei/workspace-configs//renovate/taskfile",
   ],
   "timezone": "Asia/Tokyo",
-  // First Sat and Sun of every month.
-  "schedule": "* 12-21 1-7 * 0,6",
+  // Run per two week
+  "schedule": "* 11-17 1,15 * *",
   "automerge": true,
   "packageRules": [
     // NOTE: Workflow's python version must be kept because it is minimum require-python version.
