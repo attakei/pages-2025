@@ -166,24 +166,6 @@ wheels = [
 ]
 
 [[package]]
-name = "atsphinx-toybox"
-version = "2025.1.11"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "atsphinx-bulma" },
-    { name = "sphinx" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/a2/49/683848c9c81d74f5e5331e13d6fed2ebda4f800cc3709bad4937658585c9/atsphinx_toybox-2025.1.11.tar.gz", hash = "sha256:8b66dfe1f60bc219f58267b5c961c0423a7422370bb40c8feb37c44a4901d7f2", size = 85737, upload-time = "2025-01-11T14:16:06.827Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/2e/35/8de6e250c04f29a56f321c1188ada3cae66a9e50af08e1515020c3afbe7c/atsphinx_toybox-2025.1.11-py3-none-any.whl", hash = "sha256:810aaa907a3abe119a67f1df5aa7dcaf5dff04521b2ea082af370ff936d77278", size = 12028, upload-time = "2025-01-11T14:16:05.767Z" },
-]
-
-[package.optional-dependencies]
-lindera-search = [
-    { name = "lindera-py" },
-]
-
-[[package]]
 name = "attrs"
 version = "24.3.0"
 source = { registry = "https://pypi.org/simple" }
@@ -601,26 +583,6 @@ wheels = [
 ]
 
 [[package]]
-name = "lindera-py"
-version = "0.45.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/50/dc/2a01e68fa03dd6354e2de177c42901f2f3e1d031797c0ffc12e138307b66/lindera_py-0.45.0.tar.gz", hash = "sha256:9bc0be02c5ae4cc49ec9e7da55644e02244cb791b5bd8f72e608883316dfedb1", size = 148590, upload-time = "2025-08-02T14:18:51.302Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/68/37/1ee66cdb2f7d311a7778c59faa5329bb5fa355ec944d4cc1107e0bd20ff3/lindera_py-0.45.0-cp312-cp312-macosx_10_12_x86_64.whl", hash = "sha256:d16b629ef59a2be73637a0e0db1c2637adf466aa79dc052a2df5da444ccf8e1b", size = 41736097, upload-time = "2025-08-02T14:18:31.988Z" },
-    { url = "https://files.pythonhosted.org/packages/bf/66/77af3157087dba1554449954356cfbbb3d7fae22ea84651beee890cfa418/lindera_py-0.45.0-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:9d7113c335ca7402915cf024e189f3c1beb7a96f1ca7ffa628ebe2a4da252346", size = 41980066, upload-time = "2025-08-02T14:18:23.694Z" },
-    { url = "https://files.pythonhosted.org/packages/2c/98/8f6c8b3e616341a2fb2624950fb69296a60031d871ae1f0357bc6db35b9f/lindera_py-0.45.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:e3cc54b90c1942296832fd04c2147bb290b01fa2d354a82704e0af8d96c3d431", size = 41832993, upload-time = "2025-08-02T14:17:28.008Z" },
-    { url = "https://files.pythonhosted.org/packages/58/b7/2b18bbd99fe6bb50484c9dac705cae10c42cc78ff0cafddee5922900f102/lindera_py-0.45.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:650794bc38b13c9cbb01efd398d23e45658ef1488c896fc1bccb0dcae6e1fe8c", size = 41907642, upload-time = "2025-08-02T14:18:00.542Z" },
-    { url = "https://files.pythonhosted.org/packages/ff/a5/4ca029122f77d50f063534c887280d2d9183b6fe6301aeec0c22d4dd3893/lindera_py-0.45.0-cp312-cp312-win_amd64.whl", hash = "sha256:cf49cd69305b4d4f47876cfd6f3900032e1d6702b9ed75abab187559cb53076e", size = 41522332, upload-time = "2025-08-02T14:18:43.408Z" },
-    { url = "https://files.pythonhosted.org/packages/1b/a9/0cc895b0bd7ca3feea9d8dc48293f2f4737886d191240a7366f895b0ff36/lindera_py-0.45.0-cp313-cp313-macosx_10_12_x86_64.whl", hash = "sha256:0f1b907b7eaeb585efe63a8166840fda274a1e77e752ce18c82e51b3f483e704", size = 41736053, upload-time = "2025-08-02T14:18:34.815Z" },
-    { url = "https://files.pythonhosted.org/packages/47/90/0491d0082cab45c4ea81983e5ed4636a05f3486e20ba4985fa39d6799083/lindera_py-0.45.0-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:ec4067ec92b17acd883742fb590947bf43c16b855240b6153fa00c6fe68a5cea", size = 41979207, upload-time = "2025-08-02T14:18:26.354Z" },
-    { url = "https://files.pythonhosted.org/packages/44/bd/6371f79d352a9f744d1ea34d0b13686c58b5f37399d0febc45af3798d904/lindera_py-0.45.0-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:b23e0e03c60089c6bd8ff597b1379e89bf52c98da5cecac903cc2c7155179517", size = 41832055, upload-time = "2025-08-02T14:17:30.605Z" },
-    { url = "https://files.pythonhosted.org/packages/6c/69/e231c654817952c8b527a78074ff3444cbdf0ff2216136e4769837201947/lindera_py-0.45.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:1a2e492a9822b0ace6c667cef7d535afed6e1f576d4e712a44626cfcfef60558", size = 41907234, upload-time = "2025-08-02T14:18:03.086Z" },
-    { url = "https://files.pythonhosted.org/packages/a3/12/f9f29a5877ebb7c6066897569836b6b70faa99a4331410e7a7ffda6c1c0a/lindera_py-0.45.0-cp313-cp313-win_amd64.whl", hash = "sha256:daf4ab9bff6b42c1f37671fdbeea80905cb770cd5a083337cf9481396606f35b", size = 41521879, upload-time = "2025-08-02T14:18:45.955Z" },
-    { url = "https://files.pythonhosted.org/packages/56/00/421f844043a6cba288b42d6f8b535cb2a6b99e7554cbe34e0c0a87d2d4c9/lindera_py-0.45.0-cp313-cp313t-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:892a035ae6a2016744a9600e65c443dcab2a414649c1c1d89c18985109cedea0", size = 41833132, upload-time = "2025-08-02T14:17:34.021Z" },
-    { url = "https://files.pythonhosted.org/packages/fc/cf/154953017d0daa7e6c7d0a2098ef926e39f509f213dce74cf208b1b40ff4/lindera_py-0.45.0-cp314-cp314-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d854cb3e78471ead75213c905cb5628cc1fb5a8c923305337e24c1cdd8714050", size = 41907868, upload-time = "2025-08-02T14:18:06.327Z" },
-]
-
-[[package]]
 name = "lsprotocol"
 version = "2023.0.1"
 source = { registry = "https://pypi.org/simple" }
@@ -881,7 +843,6 @@ dependencies = [
     { name = "atsphinx-htmx-boost" },
     { name = "atsphinx-pagefind" },
     { name = "atsphinx-qrcode" },
-    { name = "atsphinx-toybox", extra = ["lindera-search"] },
     { name = "beautifulsoup4" },
     { name = "cairosvg" },
     { name = "click" },
@@ -926,7 +887,6 @@ requires-dist = [
     { name = "atsphinx-htmx-boost", specifier = ">=0.2.2" },
     { name = "atsphinx-pagefind", specifier = ">=0.1.0" },
     { name = "atsphinx-qrcode", specifier = ">=0.2.0" },
-    { name = "atsphinx-toybox", extras = ["lindera-search"], specifier = ">=2025.1.11" },
     { name = "beautifulsoup4", specifier = ">=4.12.3" },
     { name = "cairosvg", specifier = ">=2.7.1" },
     { name = "click", specifier = ">=8.1.8" },
@@ -1183,6 +1143,8 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/6b/fa/3234f913fe9a6525a7b97c6dad1f51e72b917e6872e051a5e2ffd8b16fbb/ruamel.yaml.clib-0.2.14-cp314-cp314-macosx_15_0_arm64.whl", hash = "sha256:70eda7703b8126f5e52fcf276e6c0f40b0d314674f896fc58c47b0aef2b9ae83", size = 137970, upload-time = "2025-09-22T19:51:09.472Z" },
     { url = "https://files.pythonhosted.org/packages/ef/ec/4edbf17ac2c87fa0845dd366ef8d5852b96eb58fcd65fc1ecf5fe27b4641/ruamel.yaml.clib-0.2.14-cp314-cp314-musllinux_1_2_i686.whl", hash = "sha256:a0cb71ccc6ef9ce36eecb6272c81afdc2f565950cdcec33ae8e6cd8f7fc86f27", size = 739639, upload-time = "2025-09-22T19:51:10.566Z" },
     { url = "https://files.pythonhosted.org/packages/15/18/b0e1fafe59051de9e79cdd431863b03593ecfa8341c110affad7c8121efc/ruamel.yaml.clib-0.2.14-cp314-cp314-musllinux_1_2_x86_64.whl", hash = "sha256:e7cb9ad1d525d40f7d87b6df7c0ff916a66bc52cb61b66ac1b2a16d0c1b07640", size = 764456, upload-time = "2025-09-22T19:51:11.736Z" },
+    { url = "https://files.pythonhosted.org/packages/e7/cd/150fdb96b8fab27fe08d8a59fe67554568727981806e6bc2677a16081ec7/ruamel_yaml_clib-0.2.14-cp314-cp314-win32.whl", hash = "sha256:9b4104bf43ca0cd4e6f738cb86326a3b2f6eef00f417bd1e7efb7bdffe74c539", size = 102394, upload-time = "2025-11-14T21:57:36.703Z" },
+    { url = "https://files.pythonhosted.org/packages/bd/e6/a3fa40084558c7e1dc9546385f22a93949c890a8b2e445b2ba43935f51da/ruamel_yaml_clib-0.2.14-cp314-cp314-win_amd64.whl", hash = "sha256:13997d7d354a9890ea1ec5937a219817464e5cc344805b37671562a401ca3008", size = 122673, upload-time = "2025-11-14T21:57:38.177Z" },
 ]
 
 [[package]]
