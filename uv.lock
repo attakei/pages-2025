@@ -77,15 +77,16 @@ wheels = [
 
 [[package]]
 name = "atsphinx-bulma"
-version = "0.2.4"
+version = "0.4.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
+    { name = "beautifulsoup4" },
     { name = "sphinx" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/71/d2/e623abae5e55031506a71d802797f76aac4e84d37b5388674dd10eda41e8/atsphinx_bulma-0.2.4.tar.gz", hash = "sha256:bbfd304633b5d431b507a405f55e5aabcd5a30176649aa08807c80f82b591169", size = 73504, upload-time = "2025-03-15T10:28:11.685Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/39/dc/0c52ed12dcad08f21d4f1c85826b3f25d1e827dc89c8e22d12f814a01623/atsphinx_bulma-0.4.2.tar.gz", hash = "sha256:df9bac4603c85bcbede1d6c56eff4350baaebe64df9aee8181e94240b2910950", size = 80415, upload-time = "2026-04-14T17:41:10.253Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/2e/18/55a12ff02ae2ad40ad54c602ce02d3cb0010b06243c0c22311c31e74c398/atsphinx_bulma-0.2.4-py3-none-any.whl", hash = "sha256:0c520b11e9a3947f77b44d1c189d88b37b5de4ede4bde96dc3a44b9f877fc894", size = 15833, upload-time = "2025-03-15T10:28:10.391Z" },
+    { url = "https://files.pythonhosted.org/packages/a2/61/f2f5a9a5e7ee4fa8efbbdb156865ef3caf606c4657c45cd7b97d5a24d41c/atsphinx_bulma-0.4.2-py3-none-any.whl", hash = "sha256:858c733d23b4d0bb062ff876175088cb14e71e0491c82b573feb9dcd37a3264a", size = 19107, upload-time = "2026-04-14T17:41:08.681Z" },
 ]
 
 [[package]]
