@@ -18,7 +18,7 @@ pre-commit:
   jobs:
     - name: 'Ruff'
       glob: '*.py'
-      exclude: 'contents/'
+      exclude: 'contents/**'
       group:
         parallel: false
         jobs:
@@ -29,7 +29,7 @@ pre-commit:
   commands:
     ty:
       glob: '*.py'
-      exclude: 'contents/'
+      exclude: 'contents/**'
       run: '{run_python} ty check {staged_files}'
     textlint:
       glob: '*.rst'
