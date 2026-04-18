@@ -1,0 +1,25 @@
+name: 'Regular linkcheck'
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 6'
+
+env:
+  TASK_X_REMOTE_TASKFILES: 1
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: aquaproj/aqua-installer@11dd79b4e498d471a9385aa9fb7f62bb5f52a73c # v4.0.4
+        with:
+          aqua_version: v2.57.1
+      - name: 'Setup workspace'
+        run: |
+          task --yes setup
+      - name: 'Run linkcheck'
+        # continue-on-error: true
+        run: |
+          task build-linkcheck
