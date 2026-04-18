@@ -25,7 +25,7 @@ extensions = [
     "sphinx_sitemap",
     "sphinxcontrib.mermaid",
     "sphinxnotes.strike",
-    'sphinx_toolbox.collapse',
+    "sphinx_toolbox.collapse",
     # Wrapped third-party extensions
     "pages.ext.opengraph",
     # Private
