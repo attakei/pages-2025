@@ -1,3 +1,7 @@
+:root {
+  --atsphinx-bulma-default-font-size: 1em;
+}
+
 @media screen and (max-width: 1023px) {
   .navbar .navbar-brand {
     .navbar-item:not(.is-active):not(:hover),
