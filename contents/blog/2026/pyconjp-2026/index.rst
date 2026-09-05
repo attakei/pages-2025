@@ -1,7 +1,7 @@
 PyCon JP 2026 参加ログ
 ======================
 
-.. post:: 2026-09-03 10:10:00
+.. post:: 2026-09-05 18:00:10
    :category: Tech
    :tags: Python,PyCon,PyConJP
 
