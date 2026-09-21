@@ -1,0 +1,35 @@
+(第187回)Python mini Hack-a-thon(ハイブリッド)
+==============================================
+
+.. post:: 2026-09-21
+   :category: Tech
+   :tags: Python,ReStructuredText,Nim
+
+.. ogp-image:: https://pyhack.connpass.com/event/404157/
+   :width: 50%
+   :align: center
+
+やっていたこと
+--------------
+
+* `atskkserv <https://atskkserv.attakei.dev>`_ のドキュメント改善と追加機能の検討。
+
+  * 「そもそもatskkservって？」という話題は、後でZennあたりにでも。
+  * ドキュメントは最終的に Cloudflare Workers上でのデプロイをする運用になった。
+  * 機能面は連文節の変換をさせてしまった時のフォールバック枠について検討していた。
+
+* TGS2026 の Day 3 がこのタイミングで中止の発表をされてしまい、嘆いてた。
+
+  * https://tgs.cesa.or.jp/2026/news/detail/00060
+
+懇親会
+------
+
+* ローデンバッハ・フルーテージ (3.9%) * (ミディアム = 250 ml?) [#f1]_
+* サラマンダー (5%) * (ミディアム = 250 ml?) [#f1]_
+* ステラアルトワ (5%) * (330 ml)
+
+.. [#f1] https://tabelog.com/tokyo/A1310/A131002/13184169/dtlrvwlst/B457475796/ 準拠
+
+摂取アルコール量が 40 ml弱で、翌朝への影響はほぼなかった。
+帰路も特に何か起きてもいなかったので、これぐらいは許容値ではありそう。
