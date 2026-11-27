@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v6
       - uses: aquaproj/aqua-installer@b8be739961814ee66b9e0d505f4d5de0d2eff047 # v4.1.2
         with:
-          aqua_version: v2.65.2
+          aqua_version: v2.66.1
       - name: Configure environment
         run: |
           task --yes setup
